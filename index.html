@@ -4,12 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Honey Stylez | Luxury Braids & Loc Services</title>
+<title>Honey Stylez | Luxury Braiding & Loc Services</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
 
@@ -24,280 +21,413 @@ scroll-behavior:smooth;
 }
 
 body{
-background:#080808;
-color:white;
-font-family:'Montserrat',sans-serif;
+background:#000;
+font-family:Montserrat,sans-serif;
+color:#fff;
 overflow-x:hidden;
 }
 
 img{
-width:100%;
+max-width:100%;
 display:block;
 }
 
 a{
 text-decoration:none;
-color:inherit;
 }
 
 :root{
---gold:#d7aa52;
---goldLight:#f0d489;
---black:#080808;
---dark:#111;
---burgundy:#5c0f17;
+--gold:#d9ae54;
+--gold2:#f2d58c;
+--red:#5d0012;
+--black:#050505;
 }
 
-section{
-padding:100px 20px;
-}
-
-.container{
-width:min(1200px,100%);
-margin:auto;
-}
-
-.btn{
-display:inline-flex;
-align-items:center;
-justify-content:center;
-padding:14px 28px;
-background:var(--gold);
-color:black;
-font-size:11px;
-font-weight:700;
-letter-spacing:2px;
-text-transform:uppercase;
-border:1px solid var(--gold);
-transition:.3s;
-}
-
-.btn:hover{
-background:transparent;
-color:var(--gold);
-}
-
-.btn-outline{
-background:transparent;
-color:white;
-}
-
-.top-bar{
-background:#3b080f;
+.topbar{
+background:#630013;
 padding:10px;
 text-align:center;
-font-size:10px;
+font-size:12px;
 letter-spacing:2px;
-text-transform:uppercase;
-border-bottom:1px solid rgba(215,170,82,.3);
-}
-
-.top-bar span{
-color:var(--gold);
-font-weight:700;
 }
 
 header{
 position:sticky;
 top:0;
-z-index:999;
-background:rgba(5,5,5,.96);
-backdrop-filter:blur(10px);
-border-bottom:1px solid rgba(215,170,82,.2);
+z-index:9999;
+background:#000;
+border-bottom:1px solid var(--gold);
 }
 
-.nav-container{
-max-width:1250px;
+.nav{
+max-width:1400px;
 margin:auto;
-padding:15px 25px;
+padding:15px 20px;
 display:flex;
 justify-content:space-between;
 align-items:center;
 }
 
 .logo{
-font-family:'Great Vibes',cursive;
-font-size:40px;
+font-family:"Great Vibes";
+font-size:55px;
 color:var(--gold);
 }
 
-.nav-links{
+.menu{
 display:flex;
-list-style:none;
 gap:25px;
-align-items:center;
+list-style:none;
 }
 
-.nav-links a{
-font-size:10px;
-text-transform:uppercase;
+.menu a{
+color:white;
+font-size:12px;
 letter-spacing:2px;
+text-transform:uppercase;
 }
 
-.nav-book{
-padding:10px 18px;
+.book-btn{
 border:1px solid var(--gold);
+padding:12px 22px;
 color:var(--gold);
 }
 
 .hero{
-min-height:95vh;
+min-height:90vh;
 display:flex;
 align-items:center;
 justify-content:center;
 text-align:center;
+
 background:
-linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.88)),
-url("IMG_8689(1).jpeg") center/cover no-repeat;
+linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.75)),
+url("IMG_8689(1).jpeg") center/cover;
 }
 
 .hero-content{
-max-width:900px;
-padding:20px;
+max-width:1000px;
+padding:30px;
 }
 
-.hero-script{
-font-family:'Great Vibes',cursive;
-font-size:110px;
-color:var(--goldLight);
+.hero h1{
+font-family:"Great Vibes";
+font-size:120px;
+color:var(--gold);
+font-weight:normal;
 }
 
-.hero-title{
-font-family:'Cormorant Garamond',serif;
-font-size:42px;
+.hero h2{
+font-family:Cinzel;
 letter-spacing:6px;
-margin-bottom:15px;
+font-size:24px;
+margin-top:10px;
 }
 
-.hero-description{
-max-width:650px;
-margin:auto;
-line-height:1.9;
+.hero p{
+margin-top:25px;
+line-height:1.8;
 color:#ddd;
 }
 
 .hero-buttons{
-margin-top:30px;
+margin-top:35px;
 display:flex;
 justify-content:center;
 gap:15px;
 flex-wrap:wrap;
 }
 
-.category-section{
-background:#0e0e0e;
-border-top:1px solid rgba(215,170,82,.2);
-border-bottom:1px solid rgba(215,170,82,.2);
-}
-
-.categories{
-display:grid;
-grid-template-columns:repeat(6,1fr);
-}
-
-.category{
-padding:30px;
-text-align:center;
-border-right:1px solid #222;
-font-size:10px;
+.btn{
+background:var(--gold);
+padding:15px 35px;
+color:#000;
+font-weight:700;
 letter-spacing:2px;
 text-transform:uppercase;
 }
 
-.about-grid{
+.btn-outline{
+border:1px solid var(--gold);
+color:var(--gold);
+background:transparent;
+}
+
+.icon-row{
+background:#050505;
+border-top:1px solid var(--gold);
+border-bottom:1px solid var(--gold);
+}
+
+.icon-grid{
+max-width:1400px;
+margin:auto;
 display:grid;
-grid-template-columns:1fr 1fr;
-gap:60px;
-align-items:center;
+grid-template-columns:repeat(8,1fr);
 }
 
-.about-photo img{
-height:600px;
-object-fit:cover;
+.icon-box{
+padding:25px 10px;
+text-align:center;
 }
 
-.about-content h2{
-font-family:'Cormorant Garamond',serif;
-font-size:60px;
-margin-bottom:20px;
-}
-
-.about-content h2 span{
+.icon-box span{
+display:block;
+font-size:40px;
+margin-bottom:10px;
 color:var(--gold);
 }
 
-.about-content p{
-line-height:2;
-color:#aaa;
-margin-bottom:15px;
+.icon-box p{
+font-size:12px;
 }
 
-.service-grid{
+.section-title{
+text-align:center;
+margin-bottom:50px;
+}
+
+.section-title h2{
+font-family:Cinzel;
+font-size:50px;
+color:var(--gold);
+}
+
+.section-title p{
+margin-top:10px;
+color:#aaa;
+}
+
+.services{
+padding:100px 20px;
+background:
+linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+url("IMG_8746(1).jpeg") center/cover fixed;
+}
+
+.service-wrapper{
+max-width:1300px;
+margin:auto;
+display:grid;
+grid-template-columns:1.3fr .9fr;
+gap:25px;
+}
+
+.price-box{
+background:#090909;
+border:2px solid var(--gold);
+padding:35px;
+}
+
+.price-box h3{
+font-family:Cinzel;
+font-size:40px;
+margin-bottom:25px;
+color:var(--gold);
+}
+
+.price-row{
+display:flex;
+justify-content:space-between;
+padding:12px 0;
+border-bottom:1px solid #333;
+}
+
+.price-row span:last-child{
+color:var(--gold);
+font-weight:700;
+}
+
+.feature-box{
+background:#5b0014;
+padding:35px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+}
+
+.feature-box h3{
+font-family:Cinzel;
+font-size:55px;
+text-align:center;
+margin-bottom:20px;
+}
+
+.feature-box h3 span{
+color:var(--gold);
+}
+
+.feature-box ul{
+list-style:none;
+line-height:2.2;
+font-size:15px;
+}
+
+.feature-box .btn{
+margin-top:30px;
+text-align:center;
+}
+.gallery-section{
+padding:100px 20px;
+background:#000;
+}
+
+.gallery{
+max-width:1400px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:10px;
+}
+
+.gallery img{
+height:300px;
+width:100%;
+object-fit:cover;
+border:2px solid #111;
+transition:.3s;
+}
+
+.gallery img:hover{
+transform:scale(1.03);
+border-color:var(--gold);
+}
+
+.booking{
+padding:100px 20px;
+background:
+linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)),
+url("IMG_8059.jpeg") center/cover;
+}
+
+.booking-box{
+max-width:900px;
+margin:auto;
+background:#090909;
+border:2px solid var(--gold);
+padding:50px;
+}
+
+.booking-box h2{
+font-family:Cinzel;
+font-size:50px;
+text-align:center;
+color:var(--gold);
+margin-bottom:25px;
+}
+
+.booking-box p{
+text-align:center;
+color:#bbb;
+margin-bottom:30px;
+}
+
+.contact-buttons{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.contact{
+padding:100px 20px;
+background:#050505;
+}
+
+.contact-grid{
+max-width:1200px;
+margin:auto;
 display:grid;
 grid-template-columns:repeat(3,1fr);
 gap:20px;
 }
 
-.service-card{
-background:#121212;
-border:1px solid #242424;
-padding:30px;
-display:flex;
-flex-direction:column;
+.contact-card{
+background:#111;
+padding:40px;
+text-align:center;
+border:1px solid #222;
 }
 
-.service-card h3{
-font-family:'Cormorant Garamond',serif;
-font-size:34px;
+.contact-card h3{
+font-family:Cinzel;
+color:var(--gold);
 margin-bottom:15px;
 }
 
-.price-line{
-display:flex;
-justify-content:space-between;
-padding:12px 0;
-border-bottom:1px solid #222;
+footer{
+background:#000;
+border-top:1px solid var(--gold);
+padding:40px 20px;
+text-align:center;
 }
 
-.price-line span:last-child{
+footer h3{
+font-family:"Great Vibes";
+font-size:55px;
 color:var(--gold);
-font-weight:700;
+margin-bottom:10px;
 }
 
-.loc-section{
-background:#4c0912;
+footer p{
+color:#888;
 }
 
-.loc-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:50px;
-align-items:center;
+@media(max-width:900px){
+
+.icon-grid{
+grid-template-columns:repeat(4,1fr);
 }
 
-.loc-photo img{
-height:600px;
-object-fit:cover;
+.service-wrapper{
+grid-template-columns:1fr;
 }
 
-.loc-content h2{
-font-family:'Cormorant Garamond',serif;
-font-size:75px;
+.contact-grid{
+grid-template-columns:1fr;
 }
 
-.loc-content h2 span{
-color:var(--gold);
+.hero h1{
+font-size:80px;
 }
 
-.loc-price{
-display:flex;
-justify-content:space-between;
-padding:14px 0;
-border-bottom:1px solid rgba(255,255,255,.15);
+.hero h2{
+font-size:18px;
 }
 
-.loc-price strong{
-color:var(--gold);
+}
+
+@media(max-width:600px){
+
+.logo{
+font-size:40px;
+}
+
+.menu{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.hero h1{
+font-size:60px;
+}
+
+.hero-buttons{
+flex-direction:column;
+}
+
+.icon-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+.gallery{
+grid-template-columns:repeat(2,1fr);
+}
+
+.gallery img{
+height:180px;
+}
+
 }
 
 </style>
@@ -305,342 +435,214 @@ color:var(--gold);
 
 <body>
 
-<div class="top-bar">
-✨ <span>Honey Stylez</span> • Opelika / Auburn Alabama • Text To Book 470-677-5065
+<div class="topbar">
+✨ HONEY STYLEZ • OPELIKA / AUBURN ALABAMA • TEXT TO BOOK 470-677-5065
 </div>
 
 <header>
+<div class="nav">
 
-<div class="nav-container">
+<div class="logo">Honey Stylez</div>
 
-<a href="#" class="logo">Honey Stylez</a>
-
-<ul class="nav-links">
-
-<li><a href="#about">About</a></li>
+<ul class="menu">
+<li><a href="#">Home</a></li>
 <li><a href="#services">Services</a></li>
 <li><a href="#gallery">Gallery</a></li>
 <li><a href="#contact">Contact</a></li>
-
-<li>
-<a href="sms:4706775065?body=Hi%20Honey%20Stylez!%20I'd%20like%20to%20book%20an%20appointment." class="nav-book">
-Book Now
-</a>
-</li>
-
+<li><a class="book-btn" href="sms:4706775065">Book Now</a></li>
 </ul>
 
 </div>
-
 </header>
 
 <section class="hero">
 
 <div class="hero-content">
 
-<div class="hero-script">
-Honey Stylez
-</div>
+<h1>Honey Stylez</h1>
 
-<div class="hero-title">
-BRAIDS • LOCS • PROTECTIVE STYLES
-</div>
+<h2>BRAIDS • LOCS • STYLES • MORE</h2>
 
-<p class="hero-description">
-Luxury braid and loc services serving Opelika and Auburn Alabama.
+<p>
+Luxury braiding, loc maintenance and protective styles
+serving Opelika and Auburn Alabama.
 </p>
 
 <div class="hero-buttons">
 
 <a href="sms:4706775065" class="btn">
-Book Now
-</a>
-
-<a href="#services" class="btn btn-outline">
-View Services
-</a>
-
-</div>
-
-</div>
-<!-- =========================
-     SERVICES
-========================= -->
-
-<section class="services" id="services">
-
-<div class="container">
-
-<h2 style="text-align:center;font-family:'Cormorant Garamond',serif;font-size:60px;margin-bottom:50px;">
-Our Services
-</h2>
-
-<div class="service-grid">
-
-<div class="service-card">
-<h3>Knotless Braids</h3>
-
-<div class="price-line">
-<span>Large</span>
-<span>$140</span>
-</div>
-
-<div class="price-line">
-<span>Medium</span>
-<span>$160</span>
-</div>
-
-<div class="price-line">
-<span>Small</span>
-<span>$200</span>
-</div>
-
-<a href="sms:4706775065" class="btn" style="margin-top:25px;">
-Book Style
-</a>
-</div>
-
-<div class="service-card">
-<h3>Fulani Braids</h3>
-
-<div class="price-line">
-<span>Full Style</span>
-<span>$180</span>
-</div>
-
-<a href="sms:4706775065" class="btn" style="margin-top:25px;">
-Book Style
-</a>
-</div>
-
-<div class="service-card">
-<h3>LOC Services</h3>
-
-<div class="price-line">
-<span>Retwist</span>
-<span>$70</span>
-</div>
-
-<div class="price-line">
-<span>Retwist & Style</span>
-<span>$85</span>
-</div>
-
-<a href="sms:4706775065" class="btn" style="margin-top:25px;">
-Book Style
-</a>
-</div>
-
-<div class="service-card">
-<h3>Soft Locs / Butterfly Locs</h3>
-
-<div class="price-line">
-<span>Full Style</span>
-<span>$150</span>
-</div>
-
-<a href="sms:4706775065" class="btn" style="margin-top:25px;">
-Book Style
-</a>
-</div>
-
-<div class="service-card">
-<h3>Kids Styles</h3>
-
-<div class="price-line">
-<span>Ages 10-12</span>
-<span>Starting at $150</span>
-</div>
-
-<a href="sms:4706775065" class="btn" style="margin-top:25px;">
-Book Style
-</a>
-</div>
-
-<div class="service-card">
-<h3>Men's Braiding Styles</h3>
-
-<div class="price-line">
-<span>Starting Price</span>
-<span>$50</span>
-</div>
-
-<a href="sms:4706775065" class="btn" style="margin-top:25px;">
-Book Style
-</a>
-</div>
-
-</div>
-</div>
-</section>
-
-<!-- =========================
-     LOC FEATURE
-========================= -->
-
-<section class="loc-section">
-
-<div class="container">
-
-<div class="loc-grid">
-
-<div class="loc-photo">
-<img src="IMG_8059.jpeg" alt="">
-</div>
-
-<div class="loc-content">
-
-<h2>LOC <span>SERVICES</span></h2>
-
-<p style="line-height:2;margin:25px 0;">
-Professional retwists and styling to keep your locs looking fresh and healthy.
-</p>
-
-<div class="loc-price">
-<span>Retwist</span>
-<strong>$70</strong>
-</div>
-
-<div class="loc-price">
-<span>Retwist & Style</span>
-<strong>$85</strong>
-</div>
-
-<br>
-
-<a href="sms:4706775065" class="btn">
-Book Loc Services
-</a>
-
-</div>
-</div>
-</div>
-</section>
-
-<!-- =========================
-     GALLERY
-========================= -->
-
-<section id="gallery">
-
-<div class="container">
-
-<h2 style="text-align:center;font-family:'Cormorant Garamond',serif;font-size:60px;margin-bottom:50px;">
-Gallery
-</h2>
-
-<div style="
-columns:4;
-column-gap:12px;
-">
-
-<img src="IMG_1552.jpeg" style="margin-bottom:12px;border-radius:8px;">
-<img src="IMG_1555(1).jpeg" style="margin-bottom:12px;border-radius:8px;">
-<img src="IMG_1627(1).jpeg" style="margin-bottom:12px;border-radius:8px;">
-<img src="IMG_1648(1).jpeg" style="margin-bottom:12px;border-radius:8px;">
-<img src="IMG_6298(1).jpeg" style="margin-bottom:12px;border-radius:8px;">
-<img src="IMG_6816(1).jpeg" style="margin-bottom:12px;border-radius:8px;">
-<img src="IMG_8059.jpeg" style="margin-bottom:12px;border-radius:8px;">
-<img src="IMG_8101.jpeg" style="margin-bottom:12px;border-radius:8px;">
-<img src="IMG_8156.jpeg" style="margin-bottom:12px;border-radius:8px;">
-<img src="IMG_8216(1).jpeg" style="margin-bottom:12px;border-radius:8px;">
-<img src="IMG_8653(1).jpeg" style="margin-bottom:12px;border-radius:8px;">
-<img src="IMG_8687(1).jpeg" style="margin-bottom:12px;border-radius:8px;">
-<img src="IMG_8688(1).jpeg" style="margin-bottom:12px;border-radius:8px;">
-<img src="IMG_8689(1).jpeg" style="margin-bottom:12px;border-radius:8px;">
-<img src="IMG_8746(1).jpeg" style="margin-bottom:12px;border-radius:8px;">
-<img src="IMG_8747.jpeg" style="margin-bottom:12px;border-radius:8px;">
-<img src="IMG_8748(1).jpeg" style="margin-bottom:12px;border-radius:8px;">
-<img src="IMG_8771(1).jpeg" style="margin-bottom:12px;border-radius:8px;">
-<img src="image0(2).jpeg" style="margin-bottom:12px;border-radius:8px;">
-<img src="image0.jpeg" style="margin-bottom:12px;border-radius:8px;">
-<img src="image1(1).jpeg" style="margin-bottom:12px;border-radius:8px;">
-<img src="image1(2).jpeg" style="margin-bottom:12px;border-radius:8px;">
-<img src="image1.jpeg" style="margin-bottom:12px;border-radius:8px;">
-
-</div>
-
-</div>
-</section>
-
-<!-- =========================
-     CONTACT
-========================= -->
-
-<section id="contact">
-
-<div class="container">
-
-<h2 style="text-align:center;font-family:'Cormorant Garamond',serif;font-size:60px;margin-bottom:50px;">
-Contact Honey Stylez
-</h2>
-
-<div style="text-align:center;line-height:2;">
-
-<h3>📍 Opelika / Auburn Alabama</h3>
-
-<br>
-
-<h3>📱 470-677-5065</h3>
-
-<br>
-
-<a href="sms:4706775065?body=Hi%20Honey%20Stylez!%20I'd%20like%20to%20book%20an%20appointment."
-class="btn">
 Text To Book
 </a>
 
+<a href="#gallery" class="btn btn-outline">
+View Gallery
+</a>
+
 </div>
 
 </div>
 
 </section>
 
-<footer style="
-padding:60px 20px;
-text-align:center;
-border-top:1px solid #222;
-">
+<section class="icon-row">
 
-<div style="
-font-family:'Great Vibes',cursive;
-font-size:55px;
-color:#d7aa52;
-margin-bottom:15px;
-">
-Honey Stylez
+<div class="icon-grid">
+
+<div class="icon-box"><span>👑</span><p>Knotless</p></div>
+<div class="icon-box"><span>🤎</span><p>Boho</p></div>
+<div class="icon-box"><span>✨</span><p>Cornrows</p></div>
+<div class="icon-box"><span>🌸</span><p>Fulani</p></div>
+<div class="icon-box"><span>🌀</span><p>Soft Locs</p></div>
+<div class="icon-box"><span>🔒</span><p>Dread Services</p></div>
+<div class="icon-box"><span>👧🏽</span><p>Kids</p></div>
+<div class="icon-box"><span>👨🏽</span><p>Men</p></div>
+
 </div>
 
-<p style="color:#999;">
-Braids • Locs • Protective Styles
+</section>
+
+<section class="services" id="services">
+
+<div class="section-title">
+<h2>Services & Prices</h2>
+<p>Luxury Styles • Clean Parts • Lasting Results</p>
+</div>
+
+<div class="service-wrapper">
+
+<div class="price-box">
+
+<h3>Price List</h3>
+
+<div class="price-row"><span>Large Knotless</span><span>$140</span></div>
+<div class="price-row"><span>Medium Knotless</span><span>$160</span></div>
+<div class="price-row"><span>Small Knotless</span><span>$200</span></div>
+<div class="price-row"><span>Fulani Braids</span><span>$180</span></div>
+<div class="price-row"><span>Soft Locs</span><span>$150</span></div>
+<div class="price-row"><span>Retwist</span><span>$70</span></div>
+<div class="price-row"><span>Retwist & Style</span><span>$85</span></div>
+<div class="price-row"><span>Kids Styles</span><span>$150+</span></div>
+<div class="price-row"><span>Men's Braids</span><span>$50+</span></div>
+
+</div>
+
+<div class="feature-box">
+
+<h3>Luxury <span>Hair Styles</span></h3>
+
+<ul>
+<li>✔ Professional</li>
+<li>✔ Clean Parts</li>
+<li>✔ Protective Styling</li>
+<li>✔ Affordable</li>
+<li>✔ Opelika / Auburn</li>
+</ul>
+
+<a href="sms:4706775065" class="btn">
+Book Now
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="gallery-section" id="gallery">
+
+<div class="section-title">
+<h2>Hair Gallery</h2>
+<p>Real Clients • Real Styles</p>
+</div>
+
+<div class="gallery">
+
+<img src="IMG_1552.jpeg">
+<img src="IMG_1555(1).jpeg">
+<img src="IMG_1627(1).jpeg">
+<img src="IMG_1648(1).jpeg">
+<img src="IMG_6298(1).jpeg">
+<img src="IMG_6816(1).jpeg">
+<img src="IMG_8059.jpeg">
+<img src="IMG_8101.jpeg">
+<img src="IMG_8156.jpeg">
+<img src="IMG_8216(1).jpeg">
+<img src="IMG_8653(1).jpeg">
+<img src="IMG_8687(1).jpeg">
+<img src="IMG_8688(1).jpeg">
+<img src="IMG_8689(1).jpeg">
+<img src="IMG_8746(1).jpeg">
+<img src="IMG_8747.jpeg">
+<img src="IMG_8748(1).jpeg">
+<img src="IMG_8771(1).jpeg">
+<img src="image0.jpeg">
+<img src="image0(2).jpeg">
+<img src="image1.jpeg">
+<img src="image1(1).jpeg">
+<img src="image1(2).jpeg">
+
+</div>
+
+</section>
+
+<section class="booking">
+
+<div class="booking-box">
+
+<h2>Book Your Appointment</h2>
+
+<p>
+Click below and send your appointment request directly by text.
 </p>
 
-<br>
+<div class="contact-buttons">
 
-<p style="color:#666;">
-© 2026 Honey Stylez | Opelika / Auburn Alabama
+<a href="sms:4706775065" class="btn">
+Text To Book
+</a>
+
+<a href="tel:4706775065" class="btn btn-outline">
+Call Now
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="contact" id="contact">
+
+<div class="contact-grid">
+
+<div class="contact-card">
+<h3>Location</h3>
+<p>Opelika / Auburn, Alabama</p>
+</div>
+
+<div class="contact-card">
+<h3>Phone</h3>
+<p>470-677-5065</p>
+</div>
+
+<div class="contact-card">
+<h3>Honey Stylez</h3>
+<p>Braids • Locs • Protective Styles</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>Honey Stylez</h3>
+
+<p>
+Luxury Braiding & Loc Services • Opelika / Auburn Alabama
 </p>
 
 </footer>
 
-<a href="sms:4706775065?body=Hi%20Honey%20Stylez!%20I'd%20like%20to%20book%20an%20appointment."
-style="
-position:fixed;
-bottom:20px;
-left:20px;
-right:20px;
-background:#d7aa52;
-color:black;
-text-align:center;
-padding:15px;
-font-weight:700;
-letter-spacing:2px;
-text-transform:uppercase;
-z-index:9999;
-">
-Book Now
-</a>
-
 </body>
-</html>
-</section>
+</html> 
