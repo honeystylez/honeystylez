@@ -1,16 +1,16 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Honey Stylez | Opelika/Auburn Alabama</title>
+  <title>Honey Stylez | Opelika/Auburn Hair Braiding</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
 
@@ -18,36 +18,31 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-    }
-
-    html {
       scroll-behavior: smooth;
     }
 
     body {
       background: #050505;
       color: white;
-      font-family: "DM Sans", sans-serif;
-      line-height: 1.5;
-    }
-
-    img {
-      width: 100%;
-      display: block;
+      font-family: 'Montserrat', sans-serif;
     }
 
     a {
-      color: inherit;
       text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      display: block;
+      width: 100%;
     }
 
     :root {
+      --gold: #e7b94f;
+      --light-gold: #ffe29a;
+      --red: #7b0d0d;
+      --dark-red: #390505;
       --black: #050505;
-      --gold: #d9a83e;
-      --bright-gold: #ffd978;
-      --dark-red: #400407;
-      --red: #8b0d12;
-      --cream: #f6e7c8;
     }
 
 
@@ -55,62 +50,49 @@
        NAVIGATION
     ========================= */
 
-    nav {
+    header {
       position: sticky;
       top: 0;
-      z-index: 9999;
+      z-index: 1000;
+      background: rgba(0,0,0,0.96);
+      border-bottom: 2px solid var(--gold);
+    }
 
+    nav {
+      max-width: 1250px;
+      margin: auto;
       min-height: 75px;
-
       display: flex;
       align-items: center;
       justify-content: space-between;
-
-      padding: 12px 5%;
-
-      background: rgba(0, 0, 0, 0.97);
-
-      border-bottom: 1px solid var(--gold);
+      padding: 10px 25px;
     }
 
     .logo {
-      font-family: "Playfair Display", serif;
-      font-size: 31px;
-      font-style: italic;
-      color: var(--bright-gold);
-      white-space: nowrap;
-    }
-
-    .logo span {
-      color: white;
+      font-family: 'Great Vibes', cursive;
+      font-size: 42px;
+      color: var(--light-gold);
     }
 
     .nav-links {
       display: flex;
-      align-items: center;
-      gap: 26px;
-
+      gap: 28px;
       font-size: 12px;
+      font-weight: 600;
       text-transform: uppercase;
-      letter-spacing: .8px;
-    }
-
-    .nav-links a {
-      transition: .2s;
     }
 
     .nav-links a:hover {
-      color: var(--bright-gold);
+      color: var(--gold);
     }
 
-    .nav-book {
+    .book-button {
       border: 1px solid var(--gold);
       border-radius: 30px;
-
-      padding: 11px 18px;
-
-      color: var(--bright-gold);
+      padding: 12px 22px;
+      color: var(--light-gold);
       font-weight: 700;
+      font-size: 12px;
     }
 
 
@@ -119,173 +101,126 @@
     ========================= */
 
     .hero {
-      min-height: 610px;
-
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+      min-height: 600px;
 
       background:
-        radial-gradient(
-          circle at 80% 50%,
-          rgba(112, 0, 0, .6),
-          transparent 50%
-        ),
-        #050505;
-
-      border-bottom: 1px solid var(--gold);
-    }
-
-    .hero-image {
-      min-height: 610px;
-
-      background-image:
         linear-gradient(
-          90deg,
-          rgba(0,0,0,0),
+          rgba(0,0,0,.3),
           rgba(0,0,0,.5)
         ),
-        url("IMG_0941(1).jpeg");
+        url("IMG_8689(1).jpeg") center/cover;
 
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
-
-    .hero-content {
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
 
       text-align: center;
 
-      padding: 50px;
+      border-bottom: 2px solid var(--gold);
     }
 
-    .hero-content h1 {
-      font-family: "Playfair Display", serif;
-      font-size: clamp(55px, 7vw, 100px);
-      font-style: italic;
-      line-height: .95;
-
-      color: var(--bright-gold);
-
-      text-shadow:
-        0 0 15px rgba(255, 215, 120, .15);
+    .hero-content {
+      padding: 70px 20px;
+      max-width: 850px;
     }
 
-    .hero-subtitle {
-      margin-top: 25px;
-
-      font-family: "Playfair Display", serif;
-
-      font-size: 18px;
-      letter-spacing: 7px;
+    .hero h1 {
+      font-family: 'Great Vibes', cursive;
+      color: var(--light-gold);
+      font-size: clamp(65px, 10vw, 125px);
+      line-height: .9;
+      text-shadow: 0 0 15px #000;
     }
 
-    .tagline {
-      margin-top: 22px;
-
-      font-family: "Playfair Display", serif;
-      font-size: 28px;
-      font-style: italic;
-
-      color: var(--cream);
+    .hero h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 27px;
+      letter-spacing: 6px;
+      margin-top: 20px;
     }
 
-    .location {
-      margin-top: 15px;
-
-      color: #ddd;
-      font-size: 15px;
+    .hero p {
+      margin-top: 20px;
+      font-size: 17px;
     }
 
     .hero-buttons {
+      margin-top: 30px;
       display: flex;
-      gap: 14px;
-      flex-wrap: wrap;
-
       justify-content: center;
-
-      margin-top: 28px;
+      gap: 15px;
+      flex-wrap: wrap;
     }
 
-    .gold-button {
-      display: inline-block;
+    .gold-btn {
+      background:
+        linear-gradient(
+          90deg,
+          #b77b16,
+          #ffe29a,
+          #b77b16
+        );
+
+      color: #080808;
 
       padding: 14px 28px;
 
       border-radius: 30px;
 
-      background:
-        linear-gradient(
-          135deg,
-          var(--bright-gold),
-          var(--gold)
-        );
-
-      color: black;
-
-      font-weight: 800;
-      text-transform: uppercase;
-    }
-
-    .outline-button {
-      display: inline-block;
-
-      padding: 13px 28px;
+      font-weight: 700;
 
       border: 1px solid var(--gold);
+    }
+
+    .outline-btn {
+      border: 1px solid var(--gold);
+      padding: 14px 28px;
       border-radius: 30px;
-
-      color: var(--bright-gold);
-
+      color: var(--light-gold);
       font-weight: 700;
     }
 
 
     /* =========================
-       SERVICE CATEGORY BAR
+       CATEGORY BAR
     ========================= */
 
-    .service-bar {
+    .categories {
+      background: #080808;
+      border-bottom: 1px solid var(--gold);
+
       display: grid;
       grid-template-columns: repeat(6, 1fr);
-
-      background: #030303;
-
-      border-bottom: 1px solid #292929;
     }
 
-    .service-item {
-      padding: 24px 10px;
-
+    .category {
+      padding: 25px 8px;
       text-align: center;
 
-      border-right: 1px solid #292929;
+      border-right: 1px solid #3c2a0c;
     }
 
-    .service-icon {
-      width: 54px;
-      height: 54px;
+    .category-icon {
+      width: 55px;
+      height: 55px;
+
+      margin: auto;
+
+      border: 1px solid var(--gold);
+      border-radius: 50%;
 
       display: flex;
       align-items: center;
       justify-content: center;
 
-      margin: 0 auto 10px;
+      color: var(--light-gold);
 
-      border: 1px solid var(--gold);
-      border-radius: 50%;
-
-      color: var(--bright-gold);
-
-      font-size: 23px;
+      font-size: 24px;
     }
 
-    .service-item h3 {
-      font-size: 13px;
-      font-weight: 500;
+    .category p {
+      margin-top: 10px;
+      font-size: 12px;
     }
 
 
@@ -293,121 +228,156 @@
        GENERAL SECTIONS
     ========================= */
 
-    .section {
-      padding: 75px 5%;
+    section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 70px 25px;
     }
 
     .section-title {
       text-align: center;
 
-      margin-bottom: 40px;
+      font-family: 'Great Vibes', cursive;
+
+      color: var(--light-gold);
+
+      font-size: 58px;
+
+      margin-bottom: 15px;
     }
 
-    .section-title h2 {
-      font-family: "Playfair Display", serif;
+    .section-subtitle {
+      text-align: center;
 
-      color: var(--bright-gold);
+      color: #ddd;
 
-      font-size: 40px;
+      margin-bottom: 40px;
 
       letter-spacing: 2px;
     }
 
-    .section-title p {
-      margin-top: 8px;
-
-      color: #aaa;
-
-      font-size: 13px;
-    }
-
 
     /* =========================
-       SERVICES & PRICES
+       SERVICES
     ========================= */
 
-    .services-container {
-      max-width: 1200px;
-
-      margin: auto;
-
-      display: grid;
-
-      grid-template-columns: 1.05fr .95fr;
-
-      gap: 22px;
-    }
-
-    .price-card {
-      padding: 34px;
+    .services-box {
 
       border: 1px solid var(--gold);
 
       background:
-        linear-gradient(
-          rgba(0,0,0,.94),
-          rgba(0,0,0,.97)
+        radial-gradient(
+          circle at top right,
+          #300000,
+          transparent 40%
         ),
-        linear-gradient(
-          135deg,
-          #6b080d,
-          #050505
-        );
+        #090909;
+
+      padding: 35px;
     }
 
-    .price-card h3 {
-      margin-bottom: 24px;
+    .service-columns {
 
-      color: var(--bright-gold);
+      display: grid;
 
-      font-family: "Playfair Display", serif;
+      grid-template-columns: 1fr 1fr;
 
-      font-size: 28px;
+      gap: 45px;
     }
 
-    .price-group {
-      margin-bottom: 22px;
+    .service-group {
+      margin-bottom: 30px;
     }
 
-    .price-group h4 {
-      margin-bottom: 6px;
+    .service-group h3 {
 
-      color: var(--gold);
+      color: var(--light-gold);
 
-      font-size: 16px;
+      font-family: 'Cormorant Garamond', serif;
 
-      text-transform: uppercase;
+      font-size: 23px;
+
+      letter-spacing: 1px;
+
+      margin-bottom: 10px;
+
+      border-bottom: 1px solid #6b1717;
+
+      padding-bottom: 7px;
     }
 
-    .price-row {
+    .service-row {
+
       display: flex;
 
       justify-content: space-between;
 
-      padding: 6px 0;
+      padding: 7px 0;
 
-      border-bottom: 1px dotted #6b2024;
+      border-bottom: 1px dotted #6d2020;
 
-      color: #eee;
+      font-size: 14px;
     }
 
     .price {
+
       color: white;
-      font-weight: 700;
+
+      font-weight: 600;
     }
 
-    .service-photo {
-      min-height: 500px;
 
-      overflow: hidden;
+    /* =========================
+       LOC SERVICES FEATURE
+    ========================= */
+
+    .loc-feature {
+
+      margin-top: 45px;
+
+      padding: 35px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #100000,
+          #310505
+        );
+
+      border: 1px solid var(--gold);
+
+      text-align: center;
+    }
+
+    .loc-feature img {
+
+      width: 100%;
+
+      max-width: 500px;
+
+      height: 320px;
+
+      object-fit: cover;
+
+      margin: 0 auto 25px;
 
       border: 1px solid var(--gold);
     }
 
-    .service-photo img {
-      height: 100%;
+    .loc-feature h3 {
 
-      object-fit: cover;
+      color: var(--light-gold);
+
+      font-family: 'Great Vibes', cursive;
+
+      font-size: 50px;
+    }
+
+    .loc-feature p {
+
+      margin-top: 10px;
+
+      color: #eee;
     }
 
 
@@ -416,38 +386,31 @@
     ========================= */
 
     .gallery {
-      max-width: 1250px;
-
-      margin: auto;
 
       display: grid;
 
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns:
+        repeat(4, 1fr);
 
       gap: 8px;
     }
 
-    .gallery-item {
-      overflow: hidden;
+    .gallery img {
 
-      aspect-ratio: 1 / 1;
-
-      border: 1px solid var(--gold);
-
-      background: #111;
-    }
-
-    .gallery-item img {
-      width: 100%;
-      height: 100%;
+      height: 250px;
 
       object-fit: cover;
 
-      transition: transform .4s ease;
+      border: 1px solid #b98b35;
+
+      transition: .3s;
     }
 
-    .gallery-item:hover img {
-      transform: scale(1.06);
+    .gallery img:hover {
+
+      transform: scale(1.02);
+
+      filter: brightness(1.15);
     }
 
 
@@ -455,50 +418,73 @@
        BOOKING
     ========================= */
 
-    .booking-section {
-      border-top: 1px solid var(--gold);
-      border-bottom: 1px solid var(--gold);
+    .booking {
 
       background:
         linear-gradient(
-          rgba(70,0,0,.82),
-          rgba(0,0,0,.96)
-        ),
-        #100000;
-    }
+          135deg,
+          #450606,
+          #100000
+        );
 
-    .booking-box {
-      max-width: 850px;
+      border-top: 1px solid var(--gold);
 
-      margin: auto;
+      border-bottom: 1px solid var(--gold);
 
       text-align: center;
     }
 
-    .booking-box h2 {
-      font-family: "Playfair Display", serif;
+    .booking h2 {
 
-      color: var(--bright-gold);
+      font-family: 'Great Vibes', cursive;
 
-      font-size: 42px;
+      color: var(--light-gold);
+
+      font-size: 65px;
     }
 
-    .booking-box p {
-      margin: 12px 0 20px;
+    .booking p {
 
-      color: #ddd;
+      margin: 15px auto 30px;
+
+      max-width: 600px;
     }
 
-    .phone-number {
-      display: inline-block;
 
-      margin-bottom: 25px;
+    /* =========================
+       CONTACT
+    ========================= */
 
-      color: var(--bright-gold);
+    .contact-grid {
 
-      font-size: 28px;
+      display: grid;
 
-      font-weight: 800;
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap: 25px;
+
+      text-align: center;
+    }
+
+    .contact-card {
+
+      border: 1px solid var(--gold);
+
+      padding: 30px;
+
+      background: #0a0a0a;
+    }
+
+    .contact-card h3 {
+
+      color: var(--light-gold);
+
+      font-family: 'Cormorant Garamond', serif;
+
+      font-size: 25px;
+
+      margin-bottom: 12px;
     }
 
 
@@ -507,146 +493,107 @@
     ========================= */
 
     footer {
-      padding: 50px 5% 25px;
-
-      background: #020202;
-
-      border-top: 1px solid #6e5220;
-    }
-
-    .footer-grid {
-      max-width: 1100px;
-
-      margin: auto;
-
-      display: grid;
-
-      grid-template-columns: repeat(3, 1fr);
-
-      gap: 35px;
 
       text-align: center;
+
+      padding: 35px 20px;
+
+      border-top: 1px solid var(--gold);
+
+      background: #020202;
     }
 
-    footer h3 {
-      margin-bottom: 12px;
+    footer .footer-logo {
 
-      color: var(--bright-gold);
+      font-family: 'Great Vibes', cursive;
 
-      font-family: "Playfair Display", serif;
+      color: var(--light-gold);
 
-      font-size: 23px;
+      font-size: 38px;
     }
 
     footer p {
-      color: #aaa;
 
-      line-height: 1.8;
-    }
-
-    .copyright {
-      max-width: 1100px;
-
-      margin: 35px auto 0;
-
-      padding-top: 20px;
-
-      border-top: 1px solid #222;
-
-      color: #666;
-
-      text-align: center;
+      margin-top: 10px;
 
       font-size: 12px;
+
+      color: #aaa;
     }
 
 
     /* =========================
-       MOBILE
+       TABLET
     ========================= */
 
-    @media (max-width: 900px) {
+    @media (max-width: 850px) {
 
       .nav-links {
         display: none;
       }
 
-      .hero {
+      .categories {
+        grid-template-columns:
+          repeat(3, 1fr);
+      }
+
+      .service-columns {
+
         grid-template-columns: 1fr;
-      }
 
-      .hero-image {
-        min-height: 430px;
-      }
-
-      .hero-content {
-        padding: 55px 20px;
-      }
-
-      .service-bar {
-        grid-template-columns: repeat(3, 1fr);
-      }
-
-      .services-container {
-        grid-template-columns: 1fr;
+        gap: 10px;
       }
 
       .gallery {
-        grid-template-columns: repeat(3, 1fr);
+
+        grid-template-columns:
+          repeat(2, 1fr);
       }
 
-      .footer-grid {
+      .gallery img {
+        height: 190px;
+      }
+
+      .contact-grid {
+
         grid-template-columns: 1fr;
       }
+
+      .hero {
+        min-height: 520px;
+      }
+
     }
 
 
-    @media (max-width: 600px) {
+    /* =========================
+       PHONE
+    ========================= */
+
+    @media (max-width: 500px) {
 
       .logo {
-        font-size: 25px;
+        font-size: 34px;
       }
 
-      .nav-book {
-        padding: 9px 13px;
-        font-size: 11px;
+      .categories {
+
+        grid-template-columns:
+          repeat(2, 1fr);
       }
 
-      .hero-content h1 {
-        font-size: 55px;
+      .services-box {
+        padding: 20px;
       }
 
-      .hero-subtitle {
-        font-size: 14px;
-        letter-spacing: 4px;
+      .gallery img {
+        height: 170px;
       }
 
-      .tagline {
-        font-size: 24px;
-      }
-
-      .service-bar {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .gallery {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .section {
-        padding: 55px 4%;
-      }
-
-      .section-title h2 {
-        font-size: 32px;
-      }
-
-      .price-card {
-        padding: 23px;
-      }
     }
 
   </style>
+
 </head>
 
 
@@ -657,40 +604,59 @@
        NAVIGATION
   ========================= -->
 
-  <nav>
+  <header>
 
-    <a href="#home" class="logo">
-      Honey <span>Stylez</span>
-    </a>
+    <nav>
 
-    <div class="nav-links">
+      <div class="logo">
+        Honey Stylez
+      </div>
 
-      <a href="#home">Home</a>
+      <div class="nav-links">
 
-      <a href="#services">Services</a>
+        <a href="#home">
+          Home
+        </a>
 
-      <a href="#gallery">Gallery</a>
+        <a href="#services">
+          Services
+        </a>
 
-      <a href="#book">Book Now</a>
+        <a href="#gallery">
+          Gallery
+        </a>
 
-      <a href="#contact">Contact</a>
+        <a href="#booking">
+          Book Now
+        </a>
 
-    </div>
+        <a href="#contact">
+          Contact
+        </a>
 
-    <a href="sms:4706775065" class="nav-book">
-      💬 TEXT TO BOOK
-    </a>
+      </div>
 
-  </nav>
+      <a
+        class="book-button"
+        href="sms:4706775065"
+      >
+        💬 TEXT TO BOOK
+      </a>
+
+    </nav>
+
+  </header>
+
 
 
   <!-- =========================
        HERO
   ========================= -->
 
-  <section class="hero" id="home">
-
-    <div class="hero-image"></div>
+  <div
+    class="hero"
+    id="home"
+  >
 
     <div class="hero-content">
 
@@ -698,498 +664,709 @@
         Honey Stylez
       </h1>
 
-      <div class="hero-subtitle">
+      <h2>
         BRAIDS • LOCS • STYLES • MORE
-      </div>
+      </h2>
 
-      <div class="tagline">
-        Slay Every Day ♡
-      </div>
+      <p>
+        ✨ Slay Every Day ✨
+      </p>
 
-      <div class="location">
+      <p>
         📍 Opelika/Auburn, Alabama
-      </div>
+      </p>
 
       <div class="hero-buttons">
 
-        <a href="#book" class="gold-button">
-          BOOK NOW
+        <a
+          href="#booking"
+          class="gold-btn"
+        >
+          BOOK NOW →
         </a>
 
-        <a href="sms:4706775065" class="outline-button">
-          💬 470-677-5065
+        <a
+          href="sms:4706775065"
+          class="outline-btn"
+        >
+          💬 TEXT TO BOOK
         </a>
 
       </div>
 
     </div>
 
-  </section>
+  </div>
+
 
 
   <!-- =========================
-       SERVICE CATEGORIES
+       CATEGORY BAR
   ========================= -->
 
-  <section class="service-bar">
+  <div class="categories">
 
-    <div class="service-item">
-      <div class="service-icon">♛</div>
-      <h3>Knotless<br>Braids</h3>
-    </div>
 
-    <div class="service-item">
-      <div class="service-icon">✦</div>
-      <h3>Fulani<br>Braids</h3>
-    </div>
+    <a
+      href="#services"
+      class="category"
+    >
 
-    <div class="service-item">
-      <div class="service-icon">◉</div>
-      <h3>Soft Locs /<br>Butterfly Locs</h3>
-    </div>
+      <div class="category-icon">
+        ♛
+      </div>
 
-    <div class="service-item">
-      <div class="service-icon">✧</div>
-      <h3>Dread<br>Services</h3>
-    </div>
+      <p>
+        Knotless<br>
+        Braids
+      </p>
 
-    <div class="service-item">
-      <div class="service-icon">♡</div>
-      <h3>Kids<br>Styles</h3>
-    </div>
+    </a>
 
-    <div class="service-item">
-      <div class="service-icon">♙</div>
-      <h3>Men's<br>Styles</h3>
-    </div>
 
-  </section>
+    <a
+      href="#services"
+      class="category"
+    >
+
+      <div class="category-icon">
+        ♢
+      </div>
+
+      <p>
+        Fulani<br>
+        Braids
+      </p>
+
+    </a>
+
+
+    <a
+      href="#services"
+      class="category"
+    >
+
+      <div class="category-icon">
+        ◉
+      </div>
+
+      <p>
+        LOC<br>
+        Services
+      </p>
+
+    </a>
+
+
+    <a
+      href="#services"
+      class="category"
+    >
+
+      <div class="category-icon">
+        ♧
+      </div>
+
+      <p>
+        Soft Locs /<br>
+        Butterfly Locs
+      </p>
+
+    </a>
+
+
+    <a
+      href="#services"
+      class="category"
+    >
+
+      <div class="category-icon">
+        ✦
+      </div>
+
+      <p>
+        Kids<br>
+        Styles
+      </p>
+
+    </a>
+
+
+    <a
+      href="#services"
+      class="category"
+    >
+
+      <div class="category-icon">
+        ♙
+      </div>
+
+      <p>
+        Men's<br>
+        Braiding Styles
+      </p>
+
+    </a>
+
+
+  </div>
+
 
 
   <!-- =========================
        SERVICES & PRICES
   ========================= -->
 
-  <section class="section" id="services">
+  <section id="services">
 
-    <div class="section-title">
+    <h2 class="section-title">
+      Services & Prices
+    </h2>
 
-      <h2>
-        SERVICES & PRICES
-      </h2>
+    <p class="section-subtitle">
 
-      <p>
-        QUALITY STYLES &nbsp; | &nbsp;
-        CLEAN PARTS &nbsp; | &nbsp;
-        LASTING RESULTS
-      </p>
+      QUALITY STYLES
+      &nbsp; | &nbsp;
+      CLEAN PARTS
+      &nbsp; | &nbsp;
+      LASTING RESULTS
 
-    </div>
-
-
-    <div class="services-container">
+    </p>
 
 
-      <!-- PRICE LIST -->
-
-      <div class="price-card">
-
-        <h3>
-          Hair Services
-        </h3>
+    <div class="services-box">
 
 
-        <!-- KNOTLESS -->
+      <div class="service-columns">
 
-        <div class="price-group">
 
-          <h4>
-            Knotless Braids
-          </h4>
+        <!-- LEFT COLUMN -->
 
-          <div class="price-row">
-            <span>Large</span>
-            <span class="price">$140</span>
+        <div>
+
+
+          <!-- KNOTLESS -->
+
+          <div class="service-group">
+
+            <h3>
+              KNOTLESS BRAIDS
+            </h3>
+
+
+            <div class="service-row">
+
+              <span>
+                Large
+              </span>
+
+              <span class="price">
+                $140
+              </span>
+
+            </div>
+
+
+            <div class="service-row">
+
+              <span>
+                Medium
+              </span>
+
+              <span class="price">
+                $160
+              </span>
+
+            </div>
+
+
+            <div class="service-row">
+
+              <span>
+                Small
+              </span>
+
+              <span class="price">
+                $200
+              </span>
+
+            </div>
+
           </div>
 
-          <div class="price-row">
-            <span>Medium</span>
-            <span class="price">$160</span>
+
+
+          <!-- LOC SERVICES -->
+
+          <div class="service-group">
+
+            <h3>
+              LOC SERVICES
+            </h3>
+
+
+            <div class="service-row">
+
+              <span>
+                Retwist
+              </span>
+
+              <span class="price">
+                $70
+              </span>
+
+            </div>
+
+
+            <div class="service-row">
+
+              <span>
+                Retwist & Style
+              </span>
+
+              <span class="price">
+                $85
+              </span>
+
+            </div>
+
           </div>
 
-          <div class="price-row">
-            <span>Small</span>
-            <span class="price">$200</span>
-          </div>
 
         </div>
 
 
-        <!-- FULANI -->
 
-        <div class="price-group">
+        <!-- RIGHT COLUMN -->
 
-          <h4>
-            Fulani Braids
-          </h4>
+        <div>
 
-          <div class="price-row">
-            <span>Fulani Braids</span>
-            <span class="price">$180</span>
+
+          <!-- FULANI -->
+
+          <div class="service-group">
+
+            <h3>
+              FULANI BRAIDS
+            </h3>
+
+
+            <div class="service-row">
+
+              <span>
+                Fulani Braids
+              </span>
+
+              <span class="price">
+                $180
+              </span>
+
+            </div>
+
           </div>
+
+
+
+          <!-- SOFT LOCS -->
+
+          <div class="service-group">
+
+            <h3>
+              SOFT LOCS / BUTTERFLY LOCS
+            </h3>
+
+
+            <div class="service-row">
+
+              <span>
+                Soft Locs / Butterfly Locs
+              </span>
+
+              <span class="price">
+                $150
+              </span>
+
+            </div>
+
+          </div>
+
+
+
+          <!-- KIDS -->
+
+          <div class="service-group">
+
+            <h3>
+              KIDS STYLES (10–12 YRS)
+            </h3>
+
+
+            <div class="service-row">
+
+              <span>
+                Starting at
+              </span>
+
+              <span class="price">
+                $150
+              </span>
+
+            </div>
+
+          </div>
+
+
+
+          <!-- MEN -->
+
+          <div class="service-group">
+
+            <h3>
+              MEN'S BRAIDING STYLES
+            </h3>
+
+
+            <div class="service-row">
+
+              <span>
+                Starting at
+              </span>
+
+              <span class="price">
+                $50
+              </span>
+
+            </div>
+
+          </div>
+
 
         </div>
 
-
-        <!-- LOCS -->
-
-        <div class="price-group">
-
-          <h4>
-            Soft Locs / Butterfly Locs
-          </h4>
-
-          <div class="price-row">
-            <span>Full Style</span>
-            <span class="price">$150</span>
-          </div>
-
-        </div>
-
-
-        <!-- DREAD SERVICES -->
-
-        <div class="price-group">
-
-          <h4>
-            Dread Services
-          </h4>
-
-          <div class="price-row">
-            <span>Retwist</span>
-            <span class="price">$70</span>
-          </div>
-
-          <div class="price-row">
-            <span>Retwist & Style</span>
-            <span class="price">$85</span>
-          </div>
-
-        </div>
-
-
-        <!-- KIDS -->
-
-        <div class="price-group">
-
-          <h4>
-            Kids Styles (10–12 YRS)
-          </h4>
-
-          <div class="price-row">
-            <span>Medium</span>
-            <span class="price">$150</span>
-          </div>
-
-        </div>
-
-
-        <!-- MEN -->
-
-        <div class="price-group">
-
-          <h4>
-            Men's Braiding Styles
-          </h4>
-
-          <div class="price-row">
-            <span>Starting at</span>
-            <span class="price">$30</span>
-          </div>
-
-        </div>
 
       </div>
 
 
-      <!-- FEATURED PHOTO -->
 
-      <div class="service-photo">
+      <!-- =========================
+           LOC FEATURE
+      ========================= -->
+
+      <div class="loc-feature">
+
 
         <img
           src="IMG_8747.jpeg"
-          alt="Honey Stylez featured hairstyle"
+          alt="Honey Stylez Loc Services"
         >
 
+
+        <h3>
+          LOC SERVICES
+        </h3>
+
+
+        <p>
+          Professional loc maintenance,
+          clean parts, retwists and styling.
+        </p>
+
+
+        <br>
+
+
+        <a
+          href="#booking"
+          class="gold-btn"
+        >
+          BOOK YOUR LOC SERVICE
+        </a>
+
+
       </div>
+
 
     </div>
 
   </section>
 
 
+
   <!-- =========================
        HAIR GALLERY
-       ALL GITHUB PHOTOS INCLUDED
   ========================= -->
 
-  <section class="section" id="gallery">
+  <section id="gallery">
 
-    <div class="section-title">
 
-      <h2>
-        HAIR GALLERY
-      </h2>
+    <h2 class="section-title">
+      Hair Gallery
+    </h2>
 
-      <p>
-        REAL CLIENTS &nbsp; | &nbsp;
-        REAL STYLES &nbsp; | &nbsp;
-        REAL RESULTS
-      </p>
 
-    </div>
+    <p class="section-subtitle">
+
+      REAL CLIENTS
+      &nbsp; | &nbsp;
+      REAL STYLES
+      &nbsp; | &nbsp;
+      REAL RESULTS
+
+    </p>
 
 
     <div class="gallery">
 
 
-      <!-- 1 -->
+      <img
+        src="IMG_0941(1).jpeg"
+        alt="Honey Stylez hairstyle"
+      >
 
-      <div class="gallery-item">
-        <img
-          src="IMG_0941(1).jpeg"
-          alt="Honey Stylez hairstyle"
-        >
+
+      <img
+        src="IMG_1552.jpeg"
+        alt="Honey Stylez hairstyle"
+      >
+
+
+      <img
+        src="IMG_1555(1).jpeg"
+        alt="Honey Stylez hairstyle"
+      >
+
+
+      <img
+        src="IMG_1627(1).jpeg"
+        alt="Honey Stylez hairstyle"
+      >
+
+
+      <img
+        src="IMG_1648(1).jpeg"
+        alt="Honey Stylez hairstyle"
+      >
+
+
+      <img
+        src="IMG_6298(1).jpeg"
+        alt="Honey Stylez hairstyle"
+      >
+
+
+      <img
+        src="IMG_6816(1).jpeg"
+        alt="Honey Stylez hairstyle"
+      >
+
+
+      <img
+        src="IMG_8059.jpeg"
+        alt="Honey Stylez hairstyle"
+      >
+
+
+      <img
+        src="IMG_8101.jpeg"
+        alt="Honey Stylez hairstyle"
+      >
+
+
+      <img
+        src="IMG_8156.jpeg"
+        alt="Honey Stylez hairstyle"
+      >
+
+
+      <img
+        src="IMG_8216(1).jpeg"
+        alt="Honey Stylez hairstyle"
+      >
+
+
+      <img
+        src="IMG_8653(1).jpeg"
+        alt="Honey Stylez hairstyle"
+      >
+
+
+      <img
+        src="IMG_8687(1).jpeg"
+        alt="Honey Stylez hairstyle"
+      >
+
+
+      <img
+        src="IMG_8688(1).jpeg"
+        alt="Honey Stylez hairstyle"
+      >
+
+
+      <img
+        src="IMG_8689(1).jpeg"
+        alt="Honey Stylez hairstyle"
+      >
+
+
+      <img
+        src="IMG_8746(1).jpeg"
+        alt="Honey Stylez hairstyle"
+      >
+
+
+      <img
+        src="IMG_8747.jpeg"
+        alt="Honey Stylez hairstyle"
+      >
+
+
+      <img
+        src="IMG_8748(1).jpeg"
+        alt="Honey Stylez hairstyle"
+      >
+
+
+      <img
+        src="IMG_8771(1).jpeg"
+        alt="Honey Stylez hairstyle"
+      >
+
+
+      <img
+        src="image0(2).jpeg"
+        alt="Honey Stylez hairstyle"
+      >
+
+
+      <img
+        src="image0.jpeg"
+        alt="Honey Stylez hairstyle"
+      >
+
+
+      <img
+        src="image1(1).jpeg"
+        alt="Honey Stylez hairstyle"
+      >
+
+
+      <img
+        src="image1(2).jpeg"
+        alt="Honey Stylez hairstyle"
+      >
+
+
+      <img
+        src="image1.jpeg"
+        alt="Honey Stylez hairstyle"
+      >
+
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       BOOKING
+  ========================= -->
+
+  <section
+    class="booking"
+    id="booking"
+  >
+
+    <h2>
+      Book Your Next Look ♡
+    </h2>
+
+
+    <p>
+
+      Ready for your next style?
+
+      Choose your service,
+      date and time and
+      let's get you booked!
+
+    </p>
+
+
+    <a
+      href="sms:4706775065"
+      class="gold-btn"
+    >
+
+      💬 TEXT 470-677-5065
+
+    </a>
+
+
+  </section>
+
+
+
+  <!-- =========================
+       CONTACT
+  ========================= -->
+
+  <section id="contact">
+
+
+    <h2 class="section-title">
+      Contact
+    </h2>
+
+
+    <div class="contact-grid">
+
+
+      <div class="contact-card">
+
+        <h3>
+          📍 Location
+        </h3>
+
+        <p>
+          Opelika/Auburn, Alabama
+        </p>
+
       </div>
 
 
-      <!-- 2 -->
+      <div class="contact-card">
 
-      <div class="gallery-item">
-        <img
-          src="IMG_1552.jpeg"
-          alt="Honey Stylez hairstyle"
-        >
+        <h3>
+          📱 Text to Book
+        </h3>
+
+        <p>
+
+          <a href="sms:4706775065">
+
+            470-677-5065
+
+          </a>
+
+        </p>
+
       </div>
 
 
-      <!-- 3 -->
+      <div class="contact-card">
 
-      <div class="gallery-item">
-        <img
-          src="IMG_1555(1).jpeg"
-          alt="Honey Stylez hairstyle"
-        >
-      </div>
+        <h3>
+          💬 Book Your Style
+        </h3>
 
+        <p>
 
-      <!-- 4 -->
+          Text today to
+          schedule your appointment.
 
-      <div class="gallery-item">
-        <img
-          src="IMG_1627(1).jpeg"
-          alt="Honey Stylez hairstyle"
-        >
-      </div>
+        </p>
 
-
-      <!-- 5 -->
-
-      <div class="gallery-item">
-        <img
-          src="IMG_1648(1).jpeg"
-          alt="Honey Stylez hairstyle"
-        >
-      </div>
-
-
-      <!-- 6 -->
-
-      <div class="gallery-item">
-        <img
-          src="IMG_6298(1).jpeg"
-          alt="Honey Stylez hairstyle"
-        >
-      </div>
-
-
-      <!-- 7 -->
-
-      <div class="gallery-item">
-        <img
-          src="IMG_6816(1).jpeg"
-          alt="Honey Stylez hairstyle"
-        >
-      </div>
-
-
-      <!-- 8 -->
-
-      <div class="gallery-item">
-        <img
-          src="IMG_8059.jpeg"
-          alt="Honey Stylez hairstyle"
-        >
-      </div>
-
-
-      <!-- 9 -->
-
-      <div class="gallery-item">
-        <img
-          src="IMG_8101.jpeg"
-          alt="Honey Stylez hairstyle"
-        >
-      </div>
-
-
-      <!-- 10 -->
-
-      <div class="gallery-item">
-        <img
-          src="IMG_8156.jpeg"
-          alt="Honey Stylez hairstyle"
-        >
-      </div>
-
-
-      <!-- 11 -->
-
-      <div class="gallery-item">
-        <img
-          src="IMG_8216(1).jpeg"
-          alt="Honey Stylez hairstyle"
-        >
-      </div>
-
-
-      <!-- 12 -->
-
-      <div class="gallery-item">
-        <img
-          src="IMG_8653(1).jpeg"
-          alt="Honey Stylez hairstyle"
-        >
-      </div>
-
-
-      <!-- 13 -->
-
-      <div class="gallery-item">
-        <img
-          src="IMG_8687(1).jpeg"
-          alt="Honey Stylez hairstyle"
-        >
-      </div>
-
-
-      <!-- 14 -->
-
-      <div class="gallery-item">
-        <img
-          src="IMG_8688(1).jpeg"
-          alt="Honey Stylez hairstyle"
-        >
-      </div>
-
-
-      <!-- 15 -->
-
-      <div class="gallery-item">
-        <img
-          src="IMG_8689(1).jpeg"
-          alt="Honey Stylez hairstyle"
-        >
-      </div>
-
-
-      <!-- 16 -->
-
-      <div class="gallery-item">
-        <img
-          src="IMG_8746(1).jpeg"
-          alt="Honey Stylez hairstyle"
-        >
-      </div>
-
-
-      <!-- 17 -->
-
-      <div class="gallery-item">
-        <img
-          src="IMG_8747.jpeg"
-          alt="Honey Stylez hairstyle"
-        >
-      </div>
-
-
-      <!-- 18 -->
-
-      <div class="gallery-item">
-        <img
-          src="IMG_8748(1).jpeg"
-          alt="Honey Stylez hairstyle"
-        >
-      </div>
-
-
-      <!-- 19 -->
-
-      <div class="gallery-item">
-        <img
-          src="IMG_8771(1).jpeg"
-          alt="Honey Stylez hairstyle"
-        >
-      </div>
-
-
-      <!-- 20 -->
-
-      <div class="gallery-item">
-        <img
-          src="image0 (2).jpeg"
-          alt="Honey Stylez hairstyle"
-        >
-      </div>
-
-
-      <!-- 21 -->
-
-      <div class="gallery-item">
-        <img
-          src="image0.jpeg"
-          alt="Honey Stylez hairstyle"
-        >
-      </div>
-
-
-      <!-- 22 -->
-
-      <div class="gallery-item">
-        <img
-          src="image1 (1).jpeg"
-          alt="Honey Stylez hairstyle"
-        >
-      </div>
-
-
-      <!-- 23 -->
-
-      <div class="gallery-item">
-        <img
-          src="image1 (2).jpeg"
-          alt="Honey Stylez hairstyle"
-        >
-      </div>
-
-
-      <!-- 24 -->
-
-      <div class="gallery-item">
-        <img
-          src="image1.jpeg"
-          alt="Honey Stylez hairstyle"
-        >
       </div>
 
 
@@ -1198,106 +1375,25 @@
   </section>
 
 
-  <!-- =========================
-       BOOKING SECTION
-  ========================= -->
-
-  <section class="section booking-section" id="book">
-
-    <div class="booking-box">
-
-      <h2>
-        Book Your Next Look ♡
-      </h2>
-
-      <p>
-        Ready for your next hairstyle?
-        Text Honey Stylez to book your appointment.
-      </p>
-
-      <a
-        href="sms:4706775065"
-        class="phone-number"
-      >
-        470-677-5065
-      </a>
-
-      <br>
-
-      <a
-        href="sms:4706775065"
-        class="gold-button"
-      >
-        💬 TEXT TO BOOK
-      </a>
-
-    </div>
-
-  </section>
-
 
   <!-- =========================
-       CONTACT / FOOTER
+       FOOTER
   ========================= -->
 
-  <footer id="contact">
-
-    <div class="footer-grid">
+  <footer>
 
 
-      <div>
-
-        <h3>
-          Honey Stylez
-        </h3>
-
-        <p>
-          Braids • Locs • Styles • More
-        </p>
-
-        <p>
-          Slay Every Day ♡
-        </p>
-
-      </div>
-
-
-      <div>
-
-        <h3>
-          Location
-        </h3>
-
-        <p>
-          📍 Opelika/Auburn, Alabama
-        </p>
-
-      </div>
-
-
-      <div>
-
-        <h3>
-          Contact
-        </h3>
-
-        <p>
-          📞 470-677-5065
-        </p>
-
-        <p>
-          💌 honey.stylez@gmail.com
-        </p>
-
-      </div>
-
-
+    <div class="footer-logo">
+      Honey Stylez
     </div>
 
 
-    <div class="copyright">
+    <p>
+      MORE THAN HAIR • IT'S A LIFESTYLE
+    </p>
 
+
+    <p>
       © 2026 Honey Stylez.
       All Rights Reserved.
-
-    </div>
+    </p>
