@@ -4,1030 +4,326 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Honey Stylez | Braids • Locs • Styles</title>
+<title>Honey Stylez | Luxury Braids & Loc Services</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 
-/* =========================
-   RESET
-========================= */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  background: #080808;
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  overflow-x: hidden;
-}
-
-img {
-  width: 100%;
-  display: block;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-:root {
-  --black: #080808;
-  --dark: #101010;
-  --dark2: #171717;
-  --gold: #d7aa52;
-  --gold-light: #f2d58c;
-  --burgundy: #7e101a;
-  --burgundy-dark: #450910;
-  --gray: #aaa;
-}
-
-
-/* =========================
-   GENERAL
-========================= */
-
-.container {
-  width: min(1200px, 100%);
-  margin: auto;
-}
-
-section {
-  padding: 100px 20px;
-}
-
-.section-heading {
-  text-align: center;
-  margin-bottom: 55px;
-}
-
-.section-heading .small-title {
-  color: var(--gold);
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  margin-bottom: 12px;
-}
-
-.section-heading h2 {
-  font-family: "Cormorant Garamond", serif;
-  font-size: clamp(45px, 6vw, 70px);
-  line-height: 1;
-}
-
-.section-heading p {
-  max-width: 650px;
-  margin: 18px auto 0;
-  color: #999;
-  font-size: 13px;
-  line-height: 1.9;
-}
-
-
-/* =========================
-   BUTTONS
-========================= */
-
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 50px;
-  padding: 14px 28px;
-  background: var(--gold);
-  border: 1px solid var(--gold);
-  color: #050505;
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  transition: .3s;
-  cursor: pointer;
-}
-
-.btn:hover {
-  background: transparent;
-  color: var(--gold);
-  transform: translateY(-2px);
-}
-
-.btn-outline {
-  background: transparent;
-  color: white;
-}
-
-
-/* =========================
-   TOP BAR
-========================= */
-
-.top-bar {
-  background: var(--burgundy-dark);
-  border-bottom: 1px solid rgba(215,170,82,.2);
-  text-align: center;
-  padding: 9px 15px;
-  font-size: 9px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
-.top-bar span {
-  color: var(--gold);
-  font-weight: 700;
-}
-
-
-/* =========================
-   HEADER
-========================= */
-
-header {
-  position: sticky;
-  top: 0;
-  z-index: 9999;
-  background: rgba(5,5,5,.96);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(215,170,82,.2);
-}
-
-.nav-container {
-  width: min(1250px, 100%);
-  margin: auto;
-  padding: 15px 25px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 25px;
-}
-
-.logo {
-  font-family: "Great Vibes", cursive;
-  color: var(--gold);
-  font-size: 38px;
-  white-space: nowrap;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 24px;
-}
-
-.nav-links a {
-  font-size: 9px;
-  font-weight: 600;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  transition: .3s;
-}
-
-.nav-links a:hover {
-  color: var(--gold);
-}
-
-.nav-book {
-  padding: 11px 17px;
-  border: 1px solid var(--gold);
-  color: var(--gold);
-}
-
-
-/* =========================
-   HERO
-========================= */
-
-.hero {
-  min-height: 92vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-
-  background:
-    linear-gradient(
-      rgba(0,0,0,.5),
-      rgba(0,0,0,.86)
-    ),
-    url("IMG_8689(1).jpeg") center/cover no-repeat;
-}
-
-.hero-content {
-  width: min(900px, 100%);
-  padding: 40px 15px;
-}
-
-.hero-script {
-  font-family: "Great Vibes", cursive;
-  color: var(--gold-light);
-  font-size: clamp(60px, 11vw, 115px);
-  line-height: .9;
-  margin-bottom: 15px;
-}
-
-.hero-title {
-  font-family: "Cormorant Garamond", serif;
-  font-size: clamp(20px, 4vw, 38px);
-  letter-spacing: 6px;
-  margin-bottom: 20px;
-}
-
-.hero-line {
-  width: 80px;
-  height: 1px;
-  background: var(--gold);
-  margin: 0 auto 22px;
-}
-
-.hero-description {
-  max-width: 650px;
-  margin: auto;
-  color: #ddd;
-  font-size: 13px;
-  line-height: 1.9;
-}
-
-.hero-location {
-  margin-top: 16px;
-  color: var(--gold-light);
-  font-size: 11px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-}
-
-.hero-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 14px;
-  flex-wrap: wrap;
-  margin-top: 30px;
-}
-
-.hero-scroll {
-  margin-top: 50px;
-  color: #888;
-  font-size: 9px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-}
-
-
-/* =========================
-   CATEGORIES
-========================= */
-
-.category-section {
-  background: #0d0d0d;
-  border-top: 1px solid rgba(215,170,82,.25);
-  border-bottom: 1px solid rgba(215,170,82,.25);
-}
-
-.categories {
-  width: min(1200px, 100%);
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-}
-
-.category {
-  min-height: 100px;
-  padding: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  border-right: 1px solid #292929;
-  color: #ddd;
-  font-size: 9px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  transition: .3s;
-}
-
-.category:hover {
-  background: var(--burgundy-dark);
-  color: var(--gold);
-}
-
-
-/* =========================
-   ABOUT
-========================= */
-
-.about {
-  background: #0a0a0a;
-}
-
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1.1fr;
-  gap: 70px;
-  align-items: center;
-}
-
-.about-photo {
-  position: relative;
-}
-
-.about-photo img {
-  height: 600px;
-  object-fit: cover;
-}
-
-.about-content .eyebrow {
-  color: var(--gold);
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  margin-bottom: 12px;
-}
-
-.about-content h2 {
-  font-family: "Cormorant Garamond", serif;
-  font-size: clamp(45px, 5vw, 65px);
-  line-height: 1;
-  margin-bottom: 25px;
-}
-
-.about-content h2 span {
-  color: var(--gold);
-}
-
-.about-content p {
-  color: #aaa;
-  font-size: 13px;
-  line-height: 2;
-  margin-bottom: 17px;
-}
-
-.about-features {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 14px;
-  margin: 30px 0;
-}
-
-.about-feature {
-  padding: 18px;
-  background: #141414;
-  border-left: 2px solid var(--gold);
-}
-
-.about-feature strong {
-  display: block;
-  color: var(--gold);
-  font-family: "Cormorant Garamond", serif;
-  font-size: 23px;
-}
-
-.about-feature span {
-  color: #888;
-  font-size: 10px;
-}
-
-
-/* =========================
-   SERVICES
-   NO SERVICE PICTURES
-========================= */
-
-.services {
-  background: #0b0b0b;
-}
-
-.service-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
-}
-
-.service-card {
-  position: relative;
-  background: linear-gradient(145deg,#1a1a1a,#101010);
-  border: 1px solid #2c2c2c;
-  padding: 35px 30px;
-  min-height: 380px;
-  display: flex;
-  flex-direction: column;
-  transition: .3s;
-}
-
-.service-card:hover {
-  transform: translateY(-6px);
-  border-color: var(--gold);
-}
-
-.service-number {
-  color: var(--gold);
-  font-size: 9px;
-  font-weight: 700;
-  letter-spacing: 3px;
-  margin-bottom: 15px;
-}
-
-.service-content h3 {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 34px;
-  line-height: 1;
-  margin-bottom: 17px;
-}
-
-.service-content p {
-  color: #999;
-  font-size: 12px;
-  line-height: 1.8;
-  margin-bottom: 25px;
-}
-
-.service-prices {
-  border-top: 1px solid #292929;
-  margin-bottom: 25px;
-}
-
-.price-line {
-  display: flex;
-  justify-content: space-between;
-  padding: 12px 0;
-  border-bottom: 1px solid #242424;
-  font-size: 12px;
-}
-
-.price-line span:last-child {
-  color: var(--gold);
-  font-weight: 700;
-  text-align: right;
-}
-
-.service-card .btn {
-  margin-top: auto;
-  width: 100%;
-}
-
-
-/* =========================
-   LOC SERVICES
-========================= */
-
-.loc-section {
-  background: var(--burgundy-dark);
-}
-
-.loc-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  align-items: center;
-}
-
-.loc-photo img {
-  height: 600px;
-  object-fit: cover;
-}
-
-.loc-content .small-title {
-  color: var(--gold);
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-}
-
-.loc-content h2 {
-  font-family: "Cormorant Garamond", serif;
-  font-size: clamp(50px,7vw,80px);
-  line-height: .9;
-  margin: 15px 0 25px;
-}
-
-.loc-content h2 span {
-  color: var(--gold);
-}
-
-.loc-content p {
-  color: #ddd;
-  font-size: 13px;
-  line-height: 2;
-  margin-bottom: 25px;
-}
-
-.loc-prices {
-  margin-bottom: 30px;
-  border-top: 1px solid rgba(255,255,255,.15);
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
-.loc-price {
-  display: flex;
-  justify-content: space-between;
-  padding: 14px 0;
-  border-bottom: 1px solid rgba(255,255,255,.15);
+html{
+scroll-behavior:smooth;
 }
 
-.loc-price strong {
-  color: var(--gold);
+body{
+background:#080808;
+color:white;
+font-family:'Montserrat',sans-serif;
+overflow-x:hidden;
 }
 
-
-/* =========================
-   WHY HONEY STYLEZ
-========================= */
-
-.why {
-  background: #0e0e0e;
-}
-
-.why-grid {
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
-  gap: 18px;
-}
-
-.why-card {
-  text-align: center;
-  padding: 35px 20px;
-  background: #151515;
-  border: 1px solid #292929;
+img{
+width:100%;
+display:block;
 }
 
-.why-icon {
-  width: 55px;
-  height: 55px;
-  margin: 0 auto 18px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid var(--gold);
-  border-radius: 50%;
-  color: var(--gold);
-  font-size: 20px;
+a{
+text-decoration:none;
+color:inherit;
 }
 
-.why-card h3 {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 24px;
-  margin-bottom: 8px;
+:root{
+--gold:#d7aa52;
+--goldLight:#f0d489;
+--black:#080808;
+--dark:#111;
+--burgundy:#5c0f17;
 }
 
-.why-card p {
-  color: #888;
-  font-size: 11px;
-  line-height: 1.7;
+section{
+padding:100px 20px;
 }
 
-
-/* =========================
-   GALLERY
-========================= */
-
-.gallery-section {
-  background: #070707;
-}
-
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-}
-
-.gallery-item {
-  height: 330px;
-  overflow: hidden;
-  background: #111;
+.container{
+width:min(1200px,100%);
+margin:auto;
 }
 
-.gallery-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: .5s;
+.btn{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+padding:14px 28px;
+background:var(--gold);
+color:black;
+font-size:11px;
+font-weight:700;
+letter-spacing:2px;
+text-transform:uppercase;
+border:1px solid var(--gold);
+transition:.3s;
 }
 
-.gallery-item:hover img {
-  transform: scale(1.07);
+.btn:hover{
+background:transparent;
+color:var(--gold);
 }
-
 
-/*
-   IMPORTANT:
-   If an image does not load, remove the entire
-   gallery box so there are NO empty spots.
-*/
-
-.gallery-item img {
-  min-height: 1px;
+.btn-outline{
+background:transparent;
+color:white;
 }
 
-.gallery-item img[src=""] {
-  display: none;
+.top-bar{
+background:#3b080f;
+padding:10px;
+text-align:center;
+font-size:10px;
+letter-spacing:2px;
+text-transform:uppercase;
+border-bottom:1px solid rgba(215,170,82,.3);
 }
-
-
-/* =========================
-   POLICIES
-========================= */
 
-.policies {
-  background: #111;
+.top-bar span{
+color:var(--gold);
+font-weight:700;
 }
 
-.policy-grid {
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  gap: 20px;
+header{
+position:sticky;
+top:0;
+z-index:999;
+background:rgba(5,5,5,.96);
+backdrop-filter:blur(10px);
+border-bottom:1px solid rgba(215,170,82,.2);
 }
 
-.policy-card {
-  background: #181818;
-  border-top: 2px solid var(--gold);
-  padding: 30px;
+.nav-container{
+max-width:1250px;
+margin:auto;
+padding:15px 25px;
+display:flex;
+justify-content:space-between;
+align-items:center;
 }
 
-.policy-card h3 {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 27px;
-  color: var(--gold);
-  margin-bottom: 12px;
+.logo{
+font-family:'Great Vibes',cursive;
+font-size:40px;
+color:var(--gold);
 }
 
-.policy-card p {
-  color: #999;
-  font-size: 12px;
-  line-height: 1.9;
+.nav-links{
+display:flex;
+list-style:none;
+gap:25px;
+align-items:center;
 }
 
-
-/* =========================
-   BOOKING
-========================= */
-
-.booking {
-  background:
-    linear-gradient(rgba(0,0,0,.68),rgba(0,0,0,.92)),
-    url("IMG_8746(1).jpeg") center/cover no-repeat;
+.nav-links a{
+font-size:10px;
+text-transform:uppercase;
+letter-spacing:2px;
 }
 
-.booking-wrapper {
-  width: min(900px,100%);
-  margin: auto;
-  background: rgba(5,5,5,.9);
-  border: 1px solid var(--gold);
-  padding: 55px;
+.nav-book{
+padding:10px 18px;
+border:1px solid var(--gold);
+color:var(--gold);
 }
 
-.booking-heading {
-  text-align: center;
-  margin-bottom: 35px;
+.hero{
+min-height:95vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.88)),
+url("IMG_8689(1).jpeg") center/cover no-repeat;
 }
 
-.booking-heading .script {
-  color: var(--gold);
-  font-family: "Great Vibes", cursive;
-  font-size: 55px;
+.hero-content{
+max-width:900px;
+padding:20px;
 }
 
-.booking-heading h2 {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 48px;
+.hero-script{
+font-family:'Great Vibes',cursive;
+font-size:110px;
+color:var(--goldLight);
 }
 
-.booking-heading p {
-  color: #999;
-  font-size: 12px;
-  line-height: 1.8;
-  margin-top: 12px;
+.hero-title{
+font-family:'Cormorant Garamond',serif;
+font-size:42px;
+letter-spacing:6px;
+margin-bottom:15px;
 }
 
-.booking-form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 18px;
+.hero-description{
+max-width:650px;
+margin:auto;
+line-height:1.9;
+color:#ddd;
 }
 
-.form-group {
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
+.hero-buttons{
+margin-top:30px;
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
 }
 
-.form-group.full {
-  grid-column: 1 / -1;
+.category-section{
+background:#0e0e0e;
+border-top:1px solid rgba(215,170,82,.2);
+border-bottom:1px solid rgba(215,170,82,.2);
 }
 
-.form-group label {
-  color: #aaa;
-  font-size: 9px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+.categories{
+display:grid;
+grid-template-columns:repeat(6,1fr);
 }
 
-.form-group input,
-.form-group select,
-.form-group textarea {
-  width: 100%;
-  background: #111;
-  color: white;
-  border: 1px solid #333;
-  padding: 14px;
-  outline: none;
-  font-size: 12px;
+.category{
+padding:30px;
+text-align:center;
+border-right:1px solid #222;
+font-size:10px;
+letter-spacing:2px;
+text-transform:uppercase;
 }
 
-.form-group textarea {
-  min-height: 120px;
-  resize: vertical;
+.about-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
 }
 
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
-  border-color: var(--gold);
+.about-photo img{
+height:600px;
+object-fit:cover;
 }
 
-.booking-submit {
-  grid-column: 1 / -1;
-  width: 100%;
+.about-content h2{
+font-family:'Cormorant Garamond',serif;
+font-size:60px;
+margin-bottom:20px;
 }
 
-.booking-text {
-  text-align: center;
-  margin-top: 18px;
-  color: #777;
-  font-size: 10px;
+.about-content h2 span{
+color:var(--gold);
 }
-
 
-/* =========================
-   CONTACT
-========================= */
-
-.contact {
-  background: #080808;
-  text-align: center;
+.about-content p{
+line-height:2;
+color:#aaa;
+margin-bottom:15px;
 }
 
-.contact-cards {
-  max-width: 950px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  gap: 20px;
+.service-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
 }
 
-.contact-card {
-  padding: 35px 20px;
-  background: #111;
-  border: 1px solid #292929;
+.service-card{
+background:#121212;
+border:1px solid #242424;
+padding:30px;
+display:flex;
+flex-direction:column;
 }
 
-.contact-card .icon {
-  color: var(--gold);
-  font-size: 25px;
-  margin-bottom: 15px;
+.service-card h3{
+font-family:'Cormorant Garamond',serif;
+font-size:34px;
+margin-bottom:15px;
 }
 
-.contact-card h3 {
-  font-family: "Cormorant Garamond", serif;
-  color: var(--gold);
-  font-size: 25px;
-  margin-bottom: 8px;
+.price-line{
+display:flex;
+justify-content:space-between;
+padding:12px 0;
+border-bottom:1px solid #222;
 }
 
-.contact-card p {
-  color: #999;
-  font-size: 12px;
-  line-height: 1.8;
+.price-line span:last-child{
+color:var(--gold);
+font-weight:700;
 }
 
-
-/* =========================
-   FOOTER
-  font-size: 10px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin-bottom: 17px;
+.loc-section{
+background:#4c0912;
 }
 
-.footer-column a {
-  display: block;
-  color: #777;
-  font-size: 11px;
-  margin-bottom: 9px;
+.loc-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
 }
 
-.copyright {
-  text-align: center;
-  color: #555;
-  font-size: 9px;
-  letter-spacing: 1px;
-  margin-top: 25px;
+.loc-photo img{
+height:600px;
+object-fit:cover;
 }
-
 
-/* =========================
-   MOBILE
-========================= */
-
-.mobile-book {
-  display: none;
+.loc-content h2{
+font-family:'Cormorant Garamond',serif;
+font-size:75px;
 }
-
-@media (max-width:1050px) {
-
-  .categories {
-    grid-template-columns: repeat(3,1fr);
-  }
-
-  .service-grid {
-    grid-template-columns: repeat(2,1fr);
-  }
 
-  .why-grid {
-    grid-template-columns: repeat(2,1fr);
-  }
-
-  .gallery {
-    grid-template-columns: repeat(3,1fr);
-  }
+.loc-content h2 span{
+color:var(--gold);
 }
-
-
-@media (max-width:800px) {
-
-  .nav-container {
-    flex-direction: column;
-    padding: 15px;
-  }
-
-  .nav-links {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .nav-book {
-    display: none;
-  }
 
-  .about-grid,
-  .loc-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .about-photo img,
-  .loc-photo img {
-    height: 450px;
-  }
-
-  .policy-grid,
-  .contact-cards {
-    grid-template-columns: 1fr;
-  }
-
-  .footer-grid {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .footer-about {
-    margin: auto;
-  }
-
-  .booking-wrapper {
-    padding: 35px 20px;
-  }
+.loc-price{
+display:flex;
+justify-content:space-between;
+padding:14px 0;
+border-bottom:1px solid rgba(255,255,255,.15);
 }
-
-
-@media (max-width:600px) {
-
-  section {
-    padding: 75px 15px;
-  }
-
-  .logo {
-    font-size: 34px;
-  }
-
-  .nav-links {
-    gap: 10px;
-  }
-
-  .nav-links a {
-    font-size: 8px;
-  }
-
-  .hero {
-    min-height: 80vh;
-  }
-
-  .hero-title {
-    letter-spacing: 3px;
-  }
-
-  .categories {
-    grid-template-columns: repeat(2,1fr);
-  }
-
-  .service-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .why-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .gallery {
-    grid-template-columns: repeat(2,1fr);
-    gap: 6px;
-  }
-
-  .gallery-item {
-    height: 245px;
-  }
-
-  .booking-form {
-    grid-template-columns: 1fr;
-  }
-
-  .form-group.full,
-  .booking-submit {
-    grid-column: auto;
-  }
 
-  .mobile-book {
-    display: flex;
-    position: fixed;
-    z-index: 9998;
-    bottom: 15px;
-    left: 15px;
-    right: 15px;
-    height: 50px;
-    align-items: center;
-    justify-content: center;
-    background: var(--gold);
-    color: #000;
-    font-size: 10px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-  }
+.loc-price strong{
+color:var(--gold);
 }
 
 </style>
 </head>
 
-
 <body>
 
-
-<!-- =========================
-     TOP BAR
-========================= -->
-
 <div class="top-bar">
-  ✨ <span>Honey Stylez</span>
-  • Opelika / Auburn, Alabama
-  • Text To Book: 470-677-5065
+✨ <span>Honey Stylez</span> • Opelika / Auburn Alabama • Text To Book 470-677-5065
 </div>
-
-
-<!-- =========================
-     HEADER
-========================= -->
 
 <header>
 
 <div class="nav-container">
 
-<a href="#home" class="logo">
-Honey Stylez
-</a>
+<a href="#" class="logo">Honey Stylez</a>
 
 <ul class="nav-links">
 
-<li><a href="#home">Home</a></li>
 <li><a href="#about">About</a></li>
 <li><a href="#services">Services</a></li>
 <li><a href="#gallery">Gallery</a></li>
-<li><a href="#policies">Policies</a></li>
 <li><a href="#contact">Contact</a></li>
 
 <li>
-<a href="#booking" class="nav-book">
+<a href="sms:4706775065?body=Hi%20Honey%20Stylez!%20I'd%20like%20to%20book%20an%20appointment." class="nav-book">
 Book Now
 </a>
 </li>
@@ -1038,47 +334,36 @@ Book Now
 
 </header>
 
+<section class="hero">
 
-<!-- =========================
-     HERO
-     CATEGORIES
-========================= -->
+<div class="hero-content">
 
-<div class="category-section">
+<div class="hero-script">
+Honey Stylez
+</div>
 
-<div class="categories">
+<div class="hero-title">
+BRAIDS • LOCS • PROTECTIVE STYLES
+</div>
 
-<a href="#knotless" class="category">
-Knotless Braids
+<p class="hero-description">
+Luxury braid and loc services serving Opelika and Auburn Alabama.
+</p>
+
+<div class="hero-buttons">
+
+<a href="sms:4706775065" class="btn">
+Book Now
 </a>
 
-<a href="#fulani" class="category">
-Fulani Braids
-</a>
-
-<a href="#locs" class="category">
-LOC Services
-</a>
-
-<a href="#softlocs" class="category">
-Soft Locs / Butterfly Locs
-</a>
-
-<a href="#kids" class="category">
-Kids Styles
-</a>
-
-<a href="#men" class="category">
-Men's Braiding Styles
+<a href="#services" class="btn btn-outline">
+View Services
 </a>
 
 </div>
 
 </div>
-
-
 <!-- =========================
-     ABOUT
      SERVICES
 ========================= -->
 
@@ -1086,89 +371,50 @@ Men's Braiding Styles
 
 <div class="container">
 
-<div class="section-heading">
-
-<div class="small-title">
+<h2 style="text-align:center;font-family:'Cormorant Garamond',serif;font-size:60px;margin-bottom:50px;">
 Our Services
-</div>
-
-<h2>
-Find Your Style
 </h2>
-
-<p>
-Choose from our braiding, loc and protective styling
-services.
-</p>
-
-</div>
-
 
 <div class="service-grid">
 
-
-<!-- KNOTLESS -->
-
-<article class="service-card" id="knotless">
-
-<div class="service-number">
-01 / BRAIDS
-</div>
-
-<div class="service-content">
-<div class="service-number">
-02 / BRAIDS
-</div>
-
-<div class="service-content">
-
-<h3>
-Fulani Braids
-</h3>
-
-<p>
-A detailed braided look combining classic Fulani-inspired
-patterns with a beautiful protective style.
-</p>
-
-<div class="service-prices">
+<div class="service-card">
+<h3>Knotless Braids</h3>
 
 <div class="price-line">
-<span>Fulani Braids</span>
+<span>Large</span>
+<span>$140</span>
+</div>
+
+<div class="price-line">
+<span>Medium</span>
+<span>$160</span>
+</div>
+
+<div class="price-line">
+<span>Small</span>
+<span>$200</span>
+</div>
+
+<a href="sms:4706775065" class="btn" style="margin-top:25px;">
+Book Style
+</a>
+</div>
+
+<div class="service-card">
+<h3>Fulani Braids</h3>
+
+<div class="price-line">
+<span>Full Style</span>
 <span>$180</span>
 </div>
 
-</div>
-
-<a href="#booking" class="btn">
-Book This Style
+<a href="sms:4706775065" class="btn" style="margin-top:25px;">
+Book Style
 </a>
-
 </div>
 
-</article>
-
-
-<!-- LOC -->
-
-<article class="service-card" id="locs">
-
-<div class="service-number">
-03 / LOCS
-</div>
-
-<div class="service-content">
-
-<h3>
-LOC Services
-</h3>
-
-<p>
-Keep your locs looking fresh with retwist and
-retwist-and-style appointments.
-</p>
-
-<div class="service-prices">
+<div class="service-card">
+<h3>LOC Services</h3>
 
 <div class="price-line">
 <span>Retwist</span>
@@ -1180,132 +426,53 @@ retwist-and-style appointments.
 <span>$85</span>
 </div>
 
-</div>
-
-<a href="#booking" class="btn">
-Book This Style
+<a href="sms:4706775065" class="btn" style="margin-top:25px;">
+Book Style
 </a>
-
 </div>
 
-</article>
-
-
-<!-- SOFT LOCS -->
-
-<article class="service-card" id="softlocs">
-
-<div class="service-number">
-04 / LOCS
-</div>
-
-<div class="service-content">
-
-<h3>
-Soft Locs / Butterfly Locs
-</h3>
-
-<p>
-A beautiful protective loc style with a soft,
-textured and stylish finish.
-</p>
-
-<div class="service-prices">
+<div class="service-card">
+<h3>Soft Locs / Butterfly Locs</h3>
 
 <div class="price-line">
 <span>Full Style</span>
 <span>$150</span>
 </div>
 
-</div>
-
-<a href="#booking" class="btn">
-Book This Style
+<a href="sms:4706775065" class="btn" style="margin-top:25px;">
+Book Style
 </a>
-
 </div>
 
-</article>
-
-
-<!-- KIDS -->
-
-<article class="service-card" id="kids">
-
-<div class="service-number">
-05 / KIDS
-</div>
-
-<div class="service-content">
-
-<h3>
-Kids Styles
-</h3>
-
-<p>
-Stylish protective looks for children ages 10–12.
-</p>
-
-<div class="service-prices">
+<div class="service-card">
+<h3>Kids Styles</h3>
 
 <div class="price-line">
-<span>Ages 10–12</span>
+<span>Ages 10-12</span>
 <span>Starting at $150</span>
 </div>
 
-</div>
-
-<a href="#booking" class="btn">
-Book This Style
+<a href="sms:4706775065" class="btn" style="margin-top:25px;">
+Book Style
 </a>
-
 </div>
 
-</article>
-
-
-<!-- MEN -->
-
-<article class="service-card" id="men">
-
-<div class="service-number">
-06 / MEN
-</div>
-
-<div class="service-content">
-
-<h3>
-Men's Braiding Styles
-</h3>
-
-<p>
-Clean, stylish braiding options for men.
-</p>
-
-<div class="service-prices">
+<div class="service-card">
+<h3>Men's Braiding Styles</h3>
 
 <div class="price-line">
-<span>Men's Styles</span>
-<span>Starting at $50</span>
+<span>Starting Price</span>
+<span>$50</span>
 </div>
 
-</div>
-
-<a href="#booking" class="btn">
-Book This Style
+<a href="sms:4706775065" class="btn" style="margin-top:25px;">
+Book Style
 </a>
-
-</div>
-
-</article>
-
-
 </div>
 
 </div>
-
+</div>
 </section>
-
 
 <!-- =========================
      LOC FEATURE
@@ -1317,452 +484,163 @@ Book This Style
 
 <div class="loc-grid">
 
-
 <div class="loc-photo">
+<img src="IMG_8059.jpeg" alt="">
+</div>
 
-<!-- THIS IS IMG_8059.jpeg -->
+<div class="loc-content">
 
-<img
-src="IMG_8059.jpeg"
-     WHY HONEY STYLEZ
+<h2>LOC <span>SERVICES</span></h2>
+
+<p style="line-height:2;margin:25px 0;">
+Professional retwists and styling to keep your locs looking fresh and healthy.
+</p>
+
+<div class="loc-price">
+<span>Retwist</span>
+<strong>$70</strong>
+</div>
+
+<div class="loc-price">
+<span>Retwist & Style</span>
+<strong>$85</strong>
+</div>
+
+<br>
+
+<a href="sms:4706775065" class="btn">
+Book Loc Services
+</a>
+
+</div>
+</div>
+</div>
+</section>
+
+<!-- =========================
      GALLERY
 ========================= -->
 
-<section class="gallery-section" id="gallery">
+<section id="gallery">
 
 <div class="container">
 
-<div class="section-heading">
-
-<div class="small-title">
-Our Work
-</div>
-
-<h2>
-Honey Stylez Gallery
+<h2 style="text-align:center;font-family:'Cormorant Garamond',serif;font-size:60px;margin-bottom:50px;">
+Gallery
 </h2>
 
-<p>
-Take a look at some of the styles featured by
-Honey Stylez.
-</p>
+<div style="
+columns:4;
+column-gap:12px;
+">
 
-</div>
-
-
-<div class="gallery" id="galleryGrid">
-
-
-<!-- IMG_0941(1).jpeg REMOVED -->
-
-
-<div class="gallery-item">
-<img src="IMG_1552.jpeg"
-alt="Honey Stylez hairstyle"
-onerror="this.parentElement.remove()">
-</div>
-
-
-<div class="gallery-item">
-<img src="IMG_1555(1).jpeg"
-alt="Honey Stylez hairstyle"
-onerror="this.parentElement.remove()">
-</div>
-
-
-<div class="gallery-item">
-<img src="IMG_1627(1).jpeg"
-alt="Honey Stylez hairstyle"
-onerror="this.parentElement.remove()">
-</div>
-
-
-<div class="gallery-item">
-<img src="IMG_1648(1).jpeg"
-alt="Honey Stylez hairstyle"
-onerror="this.parentElement.remove()">
-</div>
-
-
-<div class="gallery-item">
-<img src="IMG_6298(1).jpeg"
-alt="Honey Stylez hairstyle"
-onerror="this.parentElement.remove()">
-</div>
-
-
-<div class="gallery-item">
-<img src="IMG_6816(1).jpeg"
-alt="Honey Stylez hairstyle"
-onerror="this.parentElement.remove()">
-</div>
-
-
-<div class="gallery-item">
-<img src="IMG_8059.jpeg"
-alt="Honey Stylez hairstyle"
-onerror="this.parentElement.remove()">
-</div>
-
-
-<div class="gallery-item">
-<img src="IMG_8101.jpeg"
-alt="Honey Stylez hairstyle"
-onerror="this.parentElement.remove()">
-</div>
-
-
-<div class="gallery-item">
-<img src="IMG_8156.jpeg"
-alt="Honey Stylez hairstyle"
-onerror="this.parentElement.remove()">
-</div>
-
-
-<div class="gallery-item">
-<img src="IMG_8216(1).jpeg"
-alt="Honey Stylez hairstyle"
-onerror="this.parentElement.remove()">
-</div>
-
-
-<div class="gallery-item">
-<img src="IMG_8653(1).jpeg"
-alt="Honey Stylez hairstyle"
-onerror="this.parentElement.remove()">
-</div>
-
-
-<div class="gallery-item">
-<img src="IMG_8687(1).jpeg"
-alt="Honey Stylez hairstyle"
-onerror="this.parentElement.remove()">
-</div>
-
-
-<div class="gallery-item">
-<img src="IMG_8688(1).jpeg"
-alt="Honey Stylez hairstyle"
-onerror="this.parentElement.remove()">
-</div>
-
-
-<div class="gallery-item">
-<img src="IMG_8689(1).jpeg"
-alt="Honey Stylez hairstyle"
-onerror="this.parentElement.remove()">
-</div>
-
-
-<div class="gallery-item">
-<img src="IMG_8746(1).jpeg"
-alt="Honey Stylez hairstyle"
-onerror="this.parentElement.remove()">
-</div>
-
-
-<div class="gallery-item">
-<img src="IMG_8747.jpeg"
-alt="Honey Stylez hairstyle"
-onerror="this.parentElement.remove()">
-</div>
-
-
-<div class="gallery-item">
-<img src="IMG_8748(1).jpeg"
-alt="Honey Stylez hairstyle"
-onerror="this.parentElement.remove()">
-</div>
-
-
-<div class="gallery-item">
-<img src="IMG_8771(1).jpeg"
-alt="Honey Stylez hairstyle"
-onerror="this.parentElement.remove()">
-</div>
-
-
-<div class="gallery-item">
-<img src="image0(2).jpeg"
-alt="Honey Stylez hairstyle"
-onerror="this.parentElement.remove()">
-</div>
-
-
-<div class="gallery-item">
-<img src="image0.jpeg"
-alt="Honey Stylez hairstyle"
-onerror="this.parentElement.remove()">
-</div>
-
-
-<div class="gallery-item">
-<img src="image1(1).jpeg"
-alt="Honey Stylez hairstyle"
-onerror="this.parentElement.remove()">
-</div>
-
-
-<div class="gallery-item">
-<img src="image1(2).jpeg"
-alt="Honey Stylez hairstyle"
-onerror="this.parentElement.remove()">
-</div>
-
-
-<div class="gallery-item">
-<img src="image1.jpeg"
-alt="Honey Stylez hairstyle"
-onerror="this.parentElement.remove()">
-</div>
-
+<img src="IMG_1552.jpeg" style="margin-bottom:12px;border-radius:8px;">
+<img src="IMG_1555(1).jpeg" style="margin-bottom:12px;border-radius:8px;">
+<img src="IMG_1627(1).jpeg" style="margin-bottom:12px;border-radius:8px;">
+<img src="IMG_1648(1).jpeg" style="margin-bottom:12px;border-radius:8px;">
+<img src="IMG_6298(1).jpeg" style="margin-bottom:12px;border-radius:8px;">
+<img src="IMG_6816(1).jpeg" style="margin-bottom:12px;border-radius:8px;">
+<img src="IMG_8059.jpeg" style="margin-bottom:12px;border-radius:8px;">
+<img src="IMG_8101.jpeg" style="margin-bottom:12px;border-radius:8px;">
+<img src="IMG_8156.jpeg" style="margin-bottom:12px;border-radius:8px;">
+<img src="IMG_8216(1).jpeg" style="margin-bottom:12px;border-radius:8px;">
+<img src="IMG_8653(1).jpeg" style="margin-bottom:12px;border-radius:8px;">
+<img src="IMG_8687(1).jpeg" style="margin-bottom:12px;border-radius:8px;">
+<img src="IMG_8688(1).jpeg" style="margin-bottom:12px;border-radius:8px;">
+<img src="IMG_8689(1).jpeg" style="margin-bottom:12px;border-radius:8px;">
+<img src="IMG_8746(1).jpeg" style="margin-bottom:12px;border-radius:8px;">
+<img src="IMG_8747.jpeg" style="margin-bottom:12px;border-radius:8px;">
+<img src="IMG_8748(1).jpeg" style="margin-bottom:12px;border-radius:8px;">
+<img src="IMG_8771(1).jpeg" style="margin-bottom:12px;border-radius:8px;">
+<img src="image0(2).jpeg" style="margin-bottom:12px;border-radius:8px;">
+<img src="image0.jpeg" style="margin-bottom:12px;border-radius:8px;">
+<img src="image1(1).jpeg" style="margin-bottom:12px;border-radius:8px;">
+<img src="image1(2).jpeg" style="margin-bottom:12px;border-radius:8px;">
+<img src="image1.jpeg" style="margin-bottom:12px;border-radius:8px;">
 
 </div>
 
 </div>
-
 </section>
-
-
-<!-- =========================
-     POLICIES
-========================= -->
-
-<section class="policies" id="policies">
-
-<div class="container">
-
-<div class="section-heading">
-
-<div class="small-title">
-Before Your Appointment
-</div>
-
-<h2>
-Booking Information
-</h2>
-
-</div>
-
-
-<div class="policy-grid">
-
-<div class="policy-card">
-
-<h3>
-Appointments
-</h3>
-
-<p>
-Appointments are scheduled in advance. Please provide
-your requested hairstyle, preferred date and any other
-information needed when contacting Honey Stylez.
-</p>
-
-</div>
-
-
-<div class="policy-card">
-
-<h3>
-Style Details
-</h3>
-
-<p>
-Pricing may vary depending on length, size, design,
-hair requirements and the amount of work needed.
-</p>
-
-</div>
-
-
-<div class="policy-card">
-
-<h3>
-Communication
-</h3>
-
-<p>
-For booking questions, availability or style details,
-please contact Honey Stylez directly.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =========================
-     BOOKING
-Knotless Braids
-</option>
-
-<option>
-Fulani Braids
-</option>
-
-<option>
-LOC Services
-</option>
-
-<option>
-Soft Locs / Butterfly Locs
-</option>
-
-<option>
-Kids Styles
-</option>
-
-<option>
-Your phone's messaging app will open with your booking information.
-</div>
-
-</div>
-
-</div>
-
-</section>
-
 
 <!-- =========================
      CONTACT
-     FOOTER
 ========================= -->
 
-<footer>
+<section id="contact">
 
-<div class="footer-grid">
+<div class="container">
 
+<h2 style="text-align:center;font-family:'Cormorant Garamond',serif;font-size:60px;margin-bottom:50px;">
+Contact Honey Stylez
+</h2>
 
-<div>
+<div style="text-align:center;line-height:2;">
 
-<div class="footer-logo">
+<h3>📍 Opelika / Auburn Alabama</h3>
+
+<br>
+
+<h3>📱 470-677-5065</h3>
+
+<br>
+
+<a href="sms:4706775065?body=Hi%20Honey%20Stylez!%20I'd%20like%20to%20book%20an%20appointment."
+class="btn">
+Text To Book
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<footer style="
+padding:60px 20px;
+text-align:center;
+border-top:1px solid #222;
+">
+
+<div style="
+font-family:'Great Vibes',cursive;
+font-size:55px;
+color:#d7aa52;
+margin-bottom:15px;
+">
 Honey Stylez
 </div>
 
-<p class="footer-about">
-Professional braiding, loc and protective styling
-services serving the Opelika and Auburn, Alabama area.
+<p style="color:#999;">
+Braids • Locs • Protective Styles
 </p>
 
-</div>
+<br>
 
-
-<div class="footer-column">
-
-<h3>
-Quick Links
-</h3>
-
-<a href="#home">Home</a>
-<a href="#about">About</a>
-<a href="#services">Services</a>
-<a href="#gallery">Gallery</a>
-<a href="#booking">Book Now</a>
-
-</div>
-
-
-<div class="footer-column">
-
-<h3>
-Services
-</h3>
-
-<a href="#knotless">Knotless Braids</a>
-<a href="#fulani">Fulani Braids</a>
-<a href="#locs">LOC Services</a>
-<a href="#softlocs">Soft Locs</a>
-<a href="#kids">Kids Styles</a>
-<a href="#men">Men's Styles</a>
-
-</div>
-
-
-</div>
-
-
-<div class="copyright">
-© 2026 Honey Stylez • Opelika / Auburn, Alabama • All Rights Reserved
-</div>
+<p style="color:#666;">
+© 2026 Honey Stylez | Opelika / Auburn Alabama
+</p>
 
 </footer>
 
-
-<!-- MOBILE BOOK BUTTON -->
-
-<a
-href="#booking"
-class="mobile-book"
->
-✨ Book With Honey Stylez
+<a href="sms:4706775065?body=Hi%20Honey%20Stylez!%20I'd%20like%20to%20book%20an%20appointment."
+style="
+position:fixed;
+bottom:20px;
+left:20px;
+right:20px;
+background:#d7aa52;
+color:black;
+text-align:center;
+padding:15px;
+font-weight:700;
+letter-spacing:2px;
+text-transform:uppercase;
+z-index:9999;
+">
+Book Now
 </a>
 
-
-<!-- =========================
-     BOOKING SCRIPT
-========================= -->
-
-<script>
-
-function sendBooking(event) {
-
-  event.preventDefault();
-
-  const name =
-    document.getElementById("name").value;
-
-  const phone =
-    document.getElementById("phone").value;
-
-  const style =
-    document.getElementById("style").value;
-
-  const date =
-    document.getElementById("date").value;
-
-  const notes =
-    document.getElementById("notes").value;
-
-
-  const message =
-    "Hi Honey Stylez!%0A%0A" +
-    "I'd like to request an appointment.%0A%0A" +
-    "Name: " + encodeURIComponent(name) + "%0A" +
-    "Phone: " + encodeURIComponent(phone) + "%0A" +
-    "Style: " + encodeURIComponent(style) + "%0A" +
-    "Preferred Date: " + encodeURIComponent(date) + "%0A" +
-    "Additional Information: " + encodeURIComponent(notes);
-
-
-  window.location.href =
-    "sms:4706775065?body=" + message;
-
-}
-
-
-/*
-  If an image fails to load, remove its
-  entire gallery box immediately.
-  This prevents blank spaces.
-*/
-
-document.querySelectorAll(".gallery-item img").forEach(function(image) {
-
-  image.addEventListener("error", function() {
-
-    const box = image.closest(".gallery-item");
-
-    if (box) {
-      box.remove();
-    }
-
-  });
-
-});
-
-</script>
+</body>
+</html>
+</section>
