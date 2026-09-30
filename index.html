@@ -1,19 +1,29 @@
+
+mjmadd@icloud.com
+2:03 AM (0 minutes ago)
+to me
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Honey Stylez | Hair Braiding</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Honey Stylez professional hair braiding in Auburn and Opelika, Alabama.">
+    <meta name="description"
+          content="Honey Stylez - Professional hair braiding, locs and protective styles in Opelika and Auburn, Alabama.">
+
+    <title>Honey Stylez | Opelika & Auburn, Alabama</title>
+
 
     <style>
 
-        /* =========================
-           GENERAL
-        ========================= */
+        /* =========================================
+           RESET
+        ========================================= */
 
         * {
             margin: 0;
@@ -27,13 +37,9 @@
 
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background: #fffaf5;
-            color: #222;
-            line-height: 1.6;
-        }
-
-        a {
-            text-decoration: none;
+            background: #050505;
+            color: white;
+            line-height: 1.5;
         }
 
         img {
@@ -41,281 +47,458 @@
             display: block;
         }
 
+        a {
+            text-decoration: none;
+        }
 
-        /* =========================
+
+        /* =========================================
+           COLORS
+        ========================================= */
+
+        :root {
+            --black: #050505;
+            --dark: #0c0c0c;
+            --gold: #d9a928;
+            --light-gold: #f2d477;
+            --red: #8e0808;
+            --bright-red: #b31515;
+            --white: #ffffff;
+            --gray: #c9c9c9;
+        }
+
+
+        /* =========================================
            HEADER
-        ========================= */
+        ========================================= */
 
         header {
-            width: 100%;
-            background: #111;
-            color: white;
-            padding: 18px 7%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            background: #050505;
+            border-bottom: 2px solid var(--gold);
+
             position: sticky;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+
+            padding: 14px 5%;
+        }
+
+        .header-inner {
+            max-width: 1250px;
+            margin: auto;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 20px;
         }
 
         .logo {
-            font-size: 28px;
+            color: var(--light-gold);
+            font-size: 30px;
+            font-family: cursive;
+            font-style: italic;
             font-weight: bold;
-            color: #d4af37;
-            letter-spacing: 1px;
+            white-space: nowrap;
         }
 
         nav {
             display: flex;
+            align-items: center;
             gap: 25px;
         }
 
         nav a {
             color: white;
-            font-size: 15px;
+            font-size: 13px;
             font-weight: bold;
-            transition: 0.3s;
+            text-transform: uppercase;
+            transition: .3s;
         }
 
         nav a:hover {
-            color: #d4af37;
+            color: var(--gold);
+        }
+
+        .header-book {
+            border: 1px solid var(--gold);
+            border-radius: 30px;
+
+            padding: 10px 18px;
+
+            color: var(--gold);
+            font-size: 12px;
+            font-weight: bold;
+
+            text-align: center;
+        }
+
+        .header-book strong {
+            display: block;
+            color: white;
+            font-size: 14px;
         }
 
 
-        /* =========================
+        /* =========================================
            HERO
-        ========================= */
+        ========================================= */
 
         .hero {
-            min-height: 90vh;
+            min-height: 650px;
+
+            display: flex;
+            align-items: center;
 
             background:
                 linear-gradient(
-                    rgba(0,0,0,0.55),
-                    rgba(0,0,0,0.55)
+                    90deg,
+                    rgba(0,0,0,.35),
+                    rgba(0,0,0,.78)
                 ),
                 url("image0.jpeg");
 
             background-size: cover;
             background-position: center;
 
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            text-align: center;
-            color: white;
-
-            padding: 40px 20px;
+            border-bottom: 2px solid var(--gold);
         }
 
         .hero-content {
-            max-width: 800px;
+            width: 90%;
+            max-width: 1250px;
+            margin: auto;
+
+            text-align: right;
+        }
+
+        .hero-content-inner {
+            max-width: 650px;
+            margin-left: auto;
         }
 
         .hero h1 {
-            font-size: clamp(48px, 8vw, 90px);
-            margin-bottom: 10px;
-            color: #d4af37;
-            font-weight: 800;
-        }
+            color: var(--light-gold);
+            font-family: cursive;
+            font-style: italic;
 
-        .hero h2 {
-            font-size: clamp(25px, 4vw, 45px);
+            font-size: clamp(55px, 8vw, 105px);
+
+            line-height: 1;
             margin-bottom: 20px;
         }
 
-        .hero p {
-            font-size: 20px;
+        .hero-tagline {
+            color: var(--gold);
+            font-size: 16px;
+            font-weight: bold;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+
+            margin-bottom: 25px;
+        }
+
+        .hero-slogan {
+            font-family: cursive;
+            font-style: italic;
+
+            font-size: 30px;
+
+            margin-bottom: 25px;
+        }
+
+        .location {
+            font-size: 17px;
             margin-bottom: 30px;
         }
 
-        .button {
-            display: inline-block;
-            background: #d4af37;
-            color: #111;
-            padding: 14px 30px;
-            border-radius: 30px;
-            font-weight: bold;
-            transition: 0.3s;
-            margin: 5px;
+        .location span {
+            color: var(--gold);
         }
 
-        .button:hover {
+        .hero-buttons {
+            display: flex;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .gold-button {
+            background: var(--gold);
+            color: #080808;
+
+            padding: 14px 28px;
+
+            border-radius: 30px;
+
+            font-weight: bold;
+
+            transition: .3s;
+        }
+
+        .gold-button:hover {
+            background: var(--light-gold);
             transform: translateY(-3px);
-            background: #f0d56a;
         }
 
-        .button-outline {
-            display: inline-block;
-            border: 2px solid white;
-            color: white;
-            padding: 12px 28px;
+        .outline-button {
+            border: 2px solid var(--gold);
+            color: var(--gold);
+
+            padding: 12px 27px;
+
             border-radius: 30px;
+
             font-weight: bold;
-            transition: 0.3s;
-            margin: 5px;
+
+            transition: .3s;
         }
 
-        .button-outline:hover {
-            background: white;
-            color: #111;
-        }
-
-
-        /* =========================
-           ABOUT
-        ========================= */
-
-        .about {
-            padding: 90px 8%;
-            text-align: center;
-            background: white;
-        }
-
-        .section-title {
-            font-size: 40px;
-            margin-bottom: 15px;
-            color: #111;
-        }
-
-        .gold-line {
-            width: 70px;
-            height: 4px;
-            background: #d4af37;
-            margin: 0 auto 30px;
-            border-radius: 5px;
-        }
-
-        .about-text {
-            max-width: 750px;
-            margin: auto;
-            font-size: 18px;
-            color: #555;
+        .outline-button:hover {
+            background: var(--gold);
+            color: #000;
         }
 
 
-        /* =========================
-           SERVICES
-        ========================= */
+        /* =========================================
+           CATEGORY BAR
+        ========================================= */
 
-        .services {
-            padding: 90px 8%;
-            text-align: center;
-            background: #fffaf5;
+        .categories {
+            background: #050505;
+
+            border-bottom: 1px solid var(--gold);
+
+            padding: 25px 5%;
         }
 
-        .service-grid {
+        .category-grid {
             max-width: 1100px;
-            margin: 45px auto 0;
+            margin: auto;
 
             display: grid;
             grid-template-columns:
-                repeat(auto-fit, minmax(230px, 1fr));
+                repeat(5, 1fr);
 
-            gap: 25px;
+            gap: 15px;
         }
 
-        .service-card {
-            background: white;
-            padding: 35px 25px;
-            border-radius: 18px;
-
-            box-shadow:
-                0 5px 20px rgba(0,0,0,0.08);
-
-            transition: 0.3s;
-
-            border-top: 4px solid #d4af37;
+        .category {
+            text-align: center;
+            color: white;
         }
 
-        .service-card:hover {
-            transform: translateY(-7px);
-            box-shadow:
-                0 10px 25px rgba(0,0,0,0.12);
+        .category-icon {
+            width: 65px;
+            height: 65px;
+
+            border: 2px solid var(--gold);
+            border-radius: 50%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            margin: auto auto 10px;
+
+            font-size: 25px;
+            color: var(--gold);
         }
 
-        .service-card h3 {
-            font-size: 23px;
+        .category p {
+            font-size: 13px;
+        }
+
+
+        /* =========================================
+           GENERAL SECTION
+        ========================================= */
+
+        section {
+            padding: 75px 6%;
+        }
+
+        .section-title {
+            text-align: center;
+
+            color: var(--light-gold);
+
+            font-family: Georgia, serif;
+
+            font-size: 38px;
+
+            text-transform: uppercase;
+
             margin-bottom: 12px;
         }
 
-        .service-card p {
-            color: #d4af37;
-            font-size: 19px;
+        .section-subtitle {
+            text-align: center;
+
+            color: var(--gray);
+
+            font-size: 14px;
+
+            margin-bottom: 40px;
+        }
+
+        .gold-line {
+            width: 100px;
+            height: 2px;
+
+            background: var(--gold);
+
+            margin: 0 auto 30px;
+        }
+
+
+        /* =========================================
+           SERVICES
+        ========================================= */
+
+        #services {
+            background:
+                radial-gradient(
+                    circle at top left,
+                    #300707,
+                    #050505 40%
+                );
+        }
+
+        .services-container {
+            max-width: 1100px;
+            margin: auto;
+
+            display: grid;
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 20px;
+        }
+
+        .service-card {
+            background: rgba(0,0,0,.9);
+
+            border: 1px solid var(--gold);
+
+            padding: 28px;
+
+            min-height: 180px;
+
+            box-shadow:
+                0 0 20px rgba(0,0,0,.5);
+        }
+
+        .service-card h3 {
+            color: var(--light-gold);
+
+            font-family: Georgia, serif;
+
+            font-size: 20px;
+
+            text-transform: uppercase;
+
+            border-bottom: 1px solid #6d1919;
+
+            padding-bottom: 10px;
+
+            margin-bottom: 15px;
+        }
+
+        .price-row {
+            display: flex;
+            justify-content: space-between;
+
+            border-bottom: 1px dotted #7e1c1c;
+
+            padding: 7px 0;
+
+            color: white;
+
+            font-size: 15px;
+        }
+
+        .price {
+            color: white;
             font-weight: bold;
         }
 
         .service-note {
-            margin-top: 35px;
-            color: #666;
+            color: #aaa;
+            font-size: 12px;
+            margin-top: 10px;
         }
 
 
-        /* =========================
-           FEATURED WORK
-        ========================= */
+        /* =========================================
+           FEATURED
+        ========================================= */
 
         .featured {
-            padding: 90px 8%;
-            background: #111;
-            color: white;
-            text-align: center;
-        }
-
-        .featured .section-title {
-            color: white;
+            background: #0a0a0a;
         }
 
         .featured-grid {
             max-width: 1100px;
-            margin: 45px auto 0;
+            margin: auto;
 
             display: grid;
             grid-template-columns:
-                repeat(auto-fit, minmax(280px, 1fr));
+                repeat(3, 1fr);
 
-            gap: 25px;
+            gap: 20px;
         }
 
         .featured-card {
+            position: relative;
+
             overflow: hidden;
-            border-radius: 18px;
-            background: #222;
+
+            border: 1px solid var(--gold);
         }
 
         .featured-card img {
             width: 100%;
-            height: 380px;
+            height: 390px;
+
             object-fit: cover;
-            transition: 0.4s;
+
+            transition: .4s;
         }
 
         .featured-card:hover img {
-            transform: scale(1.04);
+            transform: scale(1.05);
         }
 
-        .featured-card h3 {
-            padding: 18px;
-            font-size: 21px;
+        .featured-title {
+            position: absolute;
+
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+            padding: 25px 15px 15px;
+
+            background:
+                linear-gradient(
+                    transparent,
+                    rgba(0,0,0,.95)
+                );
+
+            color: white;
+
+            font-size: 20px;
+            font-weight: bold;
         }
 
 
-        /* =========================
+        /* =========================================
            GALLERY
-        ========================= */
+        ========================================= */
 
-        .gallery {
-            padding: 90px 7%;
-            background: white;
-            text-align: center;
-        }
-
-        .gallery-intro {
-            color: #666;
-            margin-bottom: 40px;
+        #gallery {
+            background: #030303;
         }
 
         .gallery-grid {
@@ -325,158 +508,363 @@
             display: grid;
 
             grid-template-columns:
-                repeat(auto-fit, minmax(240px, 1fr));
+                repeat(4, 1fr);
 
-            gap: 20px;
+            gap: 8px;
         }
 
         .gallery-item {
             overflow: hidden;
-            border-radius: 15px;
-            background: #eee;
-            box-shadow:
-                0 4px 15px rgba(0,0,0,0.08);
+
+            border: 1px solid var(--gold);
+
+            background: #111;
         }
 
         .gallery-item img {
             width: 100%;
-            height: 360px;
+            height: 300px;
+
             object-fit: cover;
-            transition: 0.4s;
+
+            transition: .4s;
         }
 
         .gallery-item:hover img {
-            transform: scale(1.05);
+            transform: scale(1.06);
         }
 
 
-        /* =========================
-           BOOKING
-        ========================= */
+        /* =========================================
+           BOOKING BANNERS
+        ========================================= */
 
-        .booking {
-            padding: 90px 8%;
+        .booking-section {
+            background:
+                linear-gradient(
+                    135deg,
+                    #600707,
+                    #130000
+                );
+
+            padding: 55px 6%;
+        }
+
+        .booking-grid {
+            max-width: 1100px;
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 20px;
+        }
+
+        .booking-card {
+            border: 1px solid var(--gold);
+
+            padding: 35px;
+
             text-align: center;
-            background: #fffaf5;
+
+            background: rgba(0,0,0,.35);
         }
 
-        .booking-box {
-            max-width: 750px;
-            margin: 40px auto 0;
+        .booking-card h3 {
+            color: var(--light-gold);
 
-            background: white;
+            font-family: Georgia, serif;
 
-            padding: 45px 30px;
+            font-size: 25px;
 
-            border-radius: 20px;
-
-            box-shadow:
-                0 5px 25px rgba(0,0,0,0.08);
+            margin-bottom: 10px;
         }
 
-        .booking-box h3 {
-            font-size: 28px;
-            margin-bottom: 15px;
+        .booking-card p {
+            color: #ddd;
+
+            margin-bottom: 20px;
         }
 
-        .booking-box p {
-            color: #555;
-            margin-bottom: 25px;
-        }
+        .phone-number {
+            font-size: 25px;
 
-
-        /* =========================
-           CONTACT
-        ========================= */
-
-        .contact {
-            padding: 90px 8%;
-            background: #111;
             color: white;
-            text-align: center;
+
+            font-weight: bold;
+
+            margin-bottom: 20px;
         }
 
-        .contact .section-title {
-            color: white;
+
+        /* =========================================
+           TESTIMONIALS
+        ========================================= */
+
+        .testimonials {
+            background: #050505;
         }
 
-        .contact-info {
-            max-width: 700px;
-            margin: 40px auto 0;
+        .testimonial-grid {
+            max-width: 1000px;
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 20px;
         }
 
-        .contact-info p {
-            margin: 15px 0;
+        .testimonial {
+            border-left: 2px solid var(--gold);
+
+            padding: 25px;
+
+            background: #0b0b0b;
+        }
+
+        .stars {
+            color: var(--gold);
+
             font-size: 18px;
+
+            margin-bottom: 10px;
+        }
+
+        .testimonial p {
+            color: #ddd;
+
+            font-style: italic;
+
+            font-size: 14px;
+        }
+
+
+        /* =========================================
+           CONTACT
+        ========================================= */
+
+        #contact {
+            background:
+                linear-gradient(
+                    135deg,
+                    #160000,
+                    #050505
+                );
+
+            text-align: center;
+        }
+
+        .contact-box {
+            max-width: 700px;
+            margin: auto;
+
+            border: 1px solid var(--gold);
+
+            padding: 40px;
+
+            background: rgba(0,0,0,.6);
+        }
+
+        .contact-row {
+            margin: 18px 0;
+
+            color: #ddd;
+
+            font-size: 17px;
         }
 
         .contact-label {
-            color: #d4af37;
+            color: var(--gold);
+
             font-weight: bold;
         }
 
+        .contact-phone {
+            color: white;
 
-        /* =========================
+            font-size: 25px;
+
+            font-weight: bold;
+        }
+
+        .contact-email {
+            color: white;
+        }
+
+
+        /* =========================================
            FOOTER
-        ========================= */
+        ========================================= */
 
         footer {
-            background: #050505;
-            color: #aaa;
+            background: #000;
+
+            border-top: 1px solid var(--gold);
+
+            padding: 30px 5%;
+
             text-align: center;
-            padding: 25px 15px;
+        }
+
+        footer .footer-logo {
+            color: var(--light-gold);
+
+            font-family: cursive;
+
+            font-style: italic;
+
+            font-size: 28px;
+
+            margin-bottom: 8px;
+        }
+
+        footer p {
+            color: #888;
+
+            font-size: 12px;
+
+            margin: 5px;
         }
 
         footer strong {
-            color: #d4af37;
+            color: var(--gold);
         }
 
 
-        /* =========================
+        /* =========================================
            MOBILE
-        ========================= */
+        ========================================= */
 
-        @media (max-width: 700px) {
+        @media (max-width: 900px) {
 
-            header {
+            .header-inner {
                 flex-direction: column;
-                gap: 12px;
-                padding: 15px;
             }
 
             nav {
-                gap: 15px;
                 flex-wrap: wrap;
                 justify-content: center;
             }
 
-            nav a {
-                font-size: 13px;
-            }
-
             .hero {
-                min-height: 80vh;
+                min-height: 600px;
             }
 
-            .hero p {
-                font-size: 17px;
+            .hero-content {
+                text-align: center;
             }
 
-            .section-title {
-                font-size: 32px;
+            .hero-content-inner {
+                margin: auto;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .category-grid {
+                grid-template-columns:
+                    repeat(3, 1fr);
             }
 
             .gallery-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 10px;
-            }
-
-            .gallery-item img {
-                height: 260px;
+                grid-template-columns:
+                    repeat(2, 1fr);
             }
 
             .featured-grid {
-                grid-template-columns: 1fr;
+                grid-template-columns:
+                    1fr;
+            }
+
+        }
+
+
+        @media (max-width: 600px) {
+
+            header {
+                position: relative;
+            }
+
+            .logo {
+                font-size: 26px;
+            }
+
+            nav {
+                gap: 12px;
+            }
+
+            nav a {
+                font-size: 10px;
+            }
+
+            .header-book {
+                display: none;
+            }
+
+            .hero {
+                min-height: 620px;
+
+                background-position: center;
+            }
+
+            .hero h1 {
+                font-size: 60px;
+            }
+
+            .hero-tagline {
+                font-size: 12px;
+                letter-spacing: 3px;
+            }
+
+            .hero-slogan {
+                font-size: 24px;
+            }
+
+            .category-grid {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .services-container {
+                grid-template-columns:
+                    1fr;
+            }
+
+            .gallery-grid {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .gallery-item img {
+                height: 230px;
+            }
+
+            .booking-grid {
+                grid-template-columns:
+                    1fr;
+            }
+
+            .testimonial-grid {
+                grid-template-columns:
+                    1fr;
+            }
+
+            section {
+                padding: 60px 5%;
+            }
+
+            .section-title {
+                font-size: 30px;
+            }
+
+            .price-row {
+                font-size: 14px;
             }
 
         }
@@ -489,60 +877,125 @@
 <body>
 
 
-    <!-- =========================
+    <!-- =========================================
          HEADER
-    ========================= -->
+    ========================================= -->
 
     <header>
 
-        <div class="logo">
-            Honey Stylez
+        <div class="header-inner">
+
+            <div class="logo">
+                Honey Stylez
+            </div>
+
+
+            <nav>
+
+                <a href="#home">
+                    Home
+                </a>
+
+                <a href="#services">
+                    Services
+                </a>
+
+                <a href="#gallery">
+                    Gallery
+                </a>
+
+                <a href="#booking">
+                    Book Now
+                </a>
+
+                <a href="#contact">
+                    Contact
+                </a>
+
+            </nav>
+
+
+            <a
+                class="header-book"
+                href="sms:4706775065"
+            >
+
+                TEXT TO BOOK
+
+                <strong>
+                    470-677-5065
+                </strong>
+
+            </a>
+
         </div>
-
-        <nav>
-
-            <a href="#home">Home</a>
-
-            <a href="#about">About</a>
-
-            <a href="#services">Services</a>
-
-            <a href="#gallery">Gallery</a>
-
-            <a href="#booking">Book</a>
-
-            <a href="#contact">Contact</a>
-
-        </nav>
 
     </header>
 
 
 
-    <!-- =========================
-         HOME / HERO
-    ========================= -->
+    <!-- =========================================
+         HERO
+    ========================================= -->
 
-    <section id="home" class="hero">
+    <section
+        id="home"
+        class="hero"
+    >
 
         <div class="hero-content">
 
-            <h1>Honey Stylez</h1>
+            <div class="hero-content-inner">
 
-            <h2>Beautiful Braids. Beautiful You.</h2>
+                <h1>
+                    Honey Stylez
+                </h1>
 
-            <p>
-                Professional hair braiding in
-                Auburn & Opelika, Alabama.
-            </p>
+                <div class="hero-tagline">
 
-            <a href="#booking" class="button">
-                Book Your Appointment
-            </a>
+                    BRAIDS
+                    &nbsp; • &nbsp;
+                    LOCS
+                    &nbsp; • &nbsp;
+                    STYLES
+                    &nbsp; • &nbsp;
+                    MORE
 
-            <a href="#gallery" class="button-outline">
-                View Our Work
-            </a>
+                </div>
+
+                <div class="hero-slogan">
+
+                    Slay Every Day ♡
+
+                </div>
+
+                <div class="location">
+
+                    <span>📍</span>
+
+                    Opelika/Auburn, Alabama
+
+                </div>
+
+                <div class="hero-buttons">
+
+                    <a
+                        href="#booking"
+                        class="gold-button"
+                    >
+                        BOOK NOW
+                    </a>
+
+                    <a
+                        href="sms:4706775065"
+                        class="outline-button"
+                    >
+                        TEXT TO BOOK
+                    </a>
+
+                </div>
+
+            </div>
 
         </div>
 
@@ -550,66 +1003,125 @@
 
 
 
-    <!-- =========================
-         ABOUT
-    ========================= -->
+    <!-- =========================================
+         SERVICE CATEGORIES
+    ========================================= -->
 
-    <section id="about" class="about">
+    <section class="categories">
 
-        <h2 class="section-title">
-            Welcome to Honey Stylez
-        </h2>
+        <div class="category-grid">
 
-        <div class="gold-line"></div>
 
-        <p class="about-text">
+            <div class="category">
 
-            Honey Stylez is a professional braiding
-            service serving the Auburn and Opelika,
-            Alabama area.
+                <div class="category-icon">
+                    ♕
+                </div>
 
-            <br><br>
+                <p>
+                    Knotless<br>
+                    Braids
+                </p>
 
-            From beautiful boho braids and knotless
-            styles to men's styles, our goal is to
-            provide clean, stylish and beautiful
-            protective hairstyles.
+            </div>
 
-        </p>
+
+            <div class="category">
+
+                <div class="category-icon">
+                    ✿
+                </div>
+
+                <p>
+                    Fulani<br>
+                    Braids
+                </p>
+
+            </div>
+
+
+            <div class="category">
+
+                <div class="category-icon">
+                    ◎
+                </div>
+
+                <p>
+                    Soft Locs /<br>
+                    Butterfly Locs
+                </p>
+
+            </div>
+
+
+            <div class="category">
+
+                <div class="category-icon">
+                    ♡
+                </div>
+
+                <p>
+                    Dread<br>
+                    Services
+                </p>
+
+            </div>
+
+
+            <div class="category">
+
+                <div class="category-icon">
+                    ♛
+                </div>
+
+                <p>
+                    Kids Styles<br>
+                    (10–12)
+                </p>
+
+            </div>
+
+
+            <div class="category">
+
+                <div class="category-icon">
+                    ♙
+                </div>
+
+                <p>
+                    Men's<br>
+                    Braiding Styles
+                </p>
+
+            </div>
+
+
+        </div>
 
     </section>
 
 
 
-    <!-- =========================
-         SERVICES
-    ========================= -->
+    <!-- =========================================
+         SERVICES & PRICES
+    ========================================= -->
 
-    <section id="services" class="services">
+    <section id="services">
 
         <h2 class="section-title">
-            Our Services
+            Services & Prices
         </h2>
 
         <div class="gold-line"></div>
 
+        <p class="section-subtitle">
+            QUALITY STYLES &nbsp; | &nbsp;
+            CLEAN PARTS &nbsp; | &nbsp;
+            LASTING RESULTS
+        </p>
 
-        <div class="service-grid">
 
-
-            <!-- BOHO -->
-
-            <div class="service-card">
-
-                <h3>
-                    Boho Braids
-                </h3>
-
-                <p>
-                    Starting at $180
-                </p>
-
-            </div>
+        <div class="services-container">
 
 
             <!-- KNOTLESS -->
@@ -620,26 +1132,128 @@
                     Knotless Braids
                 </h3>
 
-                <p>
-                    Contact for Pricing
-                </p>
+                <div class="price-row">
+
+                    <span>
+                        Large
+                    </span>
+
+                    <span class="price">
+                        $140
+                    </span>
+
+                </div>
+
+                <div class="price-row">
+
+                    <span>
+                        Medium
+                    </span>
+
+                    <span class="price">
+                        $160
+                    </span>
+
+                </div>
+
+                <div class="price-row">
+
+                    <span>
+                        Small
+                    </span>
+
+                    <span class="price">
+                        $200
+                    </span>
+
+                </div>
 
             </div>
 
 
-            <!-- MEN -->
+
+            <!-- FULANI -->
 
             <div class="service-card">
 
                 <h3>
-                    Men's Styles
+                    Fulani Braids
                 </h3>
 
-                <p>
-                    Starting at $30
-                </p>
+                <div class="price-row">
+
+                    <span>
+                        Fulani Braids
+                    </span>
+
+                    <span class="price">
+                        $180
+                    </span>
+
+                </div>
 
             </div>
+
+
+
+            <!-- SOFT LOCS -->
+
+            <div class="service-card">
+
+                <h3>
+                    Soft Locs / Butterfly Locs
+                </h3>
+
+                <div class="price-row">
+
+                    <span>
+                        Soft Locs / Butterfly Locs
+                    </span>
+
+                    <span class="price">
+                        $150
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- DREAD SERVICES -->
+
+            <div class="service-card">
+
+                <h3>
+                    Dread Services
+                </h3>
+
+                <div class="price-row">
+
+                    <span>
+                        Retwist
+                    </span>
+
+                    <span class="price">
+                        $70
+                    </span>
+
+                </div>
+
+                <div class="price-row">
+
+                    <span>
+                        Retwist & Style
+                    </span>
+
+                    <span class="price">
+                        $85
+                    </span>
+
+                </div>
+
+            </div>
+
 
 
             <!-- KIDS -->
@@ -647,41 +1261,69 @@
             <div class="service-card">
 
                 <h3>
-                    Kids Styles
+                    Kids Styles (10–12 Yrs)
                 </h3>
 
-                <p>
-                    Contact for Pricing
-                </p>
+                <div class="price-row">
+
+                    <span>
+                        Medium
+                    </span>
+
+                    <span class="price">
+                        $150
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- MEN'S -->
+
+            <div class="service-card">
+
+                <h3>
+                    Men's Braiding Styles
+                </h3>
+
+                <div class="price-row">
+
+                    <span>
+                        Starting At
+                    </span>
+
+                    <span class="price">
+                        $50
+                    </span>
+
+                </div>
 
             </div>
 
 
         </div>
 
-
-        <p class="service-note">
-
-            Prices may vary depending on length,
-            size, hair type and requested style.
-
-        </p>
-
     </section>
 
 
 
-    <!-- =========================
-         FEATURED STYLES
-    ========================= -->
+    <!-- =========================================
+         FEATURED WORK
+    ========================================= -->
 
     <section class="featured">
 
         <h2 class="section-title">
-            Featured Styles
+            Luxury Hair Styles
         </h2>
 
         <div class="gold-line"></div>
+
+        <p class="section-subtitle">
+            Professional • Clean • On Time • Affordable
+        </p>
 
 
         <div class="featured-grid">
@@ -691,12 +1333,12 @@
 
                 <img
                     src="image0.jpeg"
-                    alt="Honey Stylez Boho Braids"
+                    alt="Honey Stylez hairstyle"
                 >
 
-                <h3>
-                    Boho Braids
-                </h3>
+                <div class="featured-title">
+                    Knotless Braids
+                </div>
 
             </div>
 
@@ -705,12 +1347,12 @@
 
                 <img
                     src="image1.jpeg"
-                    alt="Honey Stylez Braids"
+                    alt="Honey Stylez hairstyle"
                 >
 
-                <h3>
-                    Knotless Braids
-                </h3>
+                <div class="featured-title">
+                    Protective Styles
+                </div>
 
             </div>
 
@@ -719,12 +1361,12 @@
 
                 <img
                     src="image2.jpeg"
-                    alt="Honey Stylez Men's Style"
+                    alt="Honey Stylez hairstyle"
                 >
 
-                <h3>
-                    Men's Styles
-                </h3>
+                <div class="featured-title">
+                    Beautiful Braiding
+                </div>
 
             </div>
 
@@ -735,117 +1377,119 @@
 
 
 
-    <!-- =========================
-         FULL GALLERY
-    ========================= -->
+    <!-- =========================================
+         GALLERY
+    ========================================= -->
 
-    <section id="gallery" class="gallery">
+    <section id="gallery">
 
         <h2 class="section-title">
-            Our Work
+            Hair Gallery
         </h2>
 
         <div class="gold-line"></div>
 
-        <p class="gallery-intro">
-            Check out some of our latest styles.
+        <p class="section-subtitle">
+            REAL CLIENTS &nbsp; | &nbsp;
+            REAL STYLES &nbsp; | &nbsp;
+            REAL RESULTS
         </p>
 
 
         <div class="gallery-grid">
 
 
-            <!-- PHOTO 1 -->
+            <!-- IMAGE 1 -->
 
             <div class="gallery-item">
 
                 <img
                     src="image0.jpeg"
-                    alt="Honey Stylez hairstyle"
+                    alt="Honey Stylez client hairstyle"
                 >
 
             </div>
 
 
-            <!-- PHOTO 2 -->
+            <!-- IMAGE 2 -->
 
             <div class="gallery-item">
 
                 <img
                     src="image0 (1).jpeg"
-                    alt="Honey Stylez hairstyle"
+                    alt="Honey Stylez client hairstyle"
                 >
 
             </div>
 
 
-            <!-- PHOTO 3 -->
+            <!-- IMAGE 3 -->
 
             <div class="gallery-item">
 
                 <img
                     src="image0 (2).jpeg"
-                    alt="Honey Stylez hairstyle"
+                    alt="Honey Stylez client hairstyle"
                 >
 
             </div>
 
 
-            <!-- PHOTO 4 -->
+            <!-- IMAGE 4 -->
 
             <div class="gallery-item">
 
                 <img
                     src="image1.jpeg"
-                    alt="Honey Stylez hairstyle"
+                    alt="Honey Stylez client hairstyle"
                 >
 
             </div>
 
 
-            <!-- PHOTO 5 -->
+            <!-- IMAGE 5 -->
 
             <div class="gallery-item">
 
                 <img
                     src="image1 (1).jpeg"
-                    alt="Honey Stylez hairstyle"
+                    alt="Honey Stylez client hairstyle"
                 >
 
             </div>
 
 
-            <!-- PHOTO 6 -->
+            <!-- IMAGE 6 -->
 
             <div class="gallery-item">
 
                 <img
                     src="image1 (2).jpeg"
-                    alt="Honey Stylez hairstyle"
+                    alt="Honey Stylez client hairstyle"
                 >
 
             </div>
 
 
-            <!-- PHOTO 7 -->
+            <!-- IMAGE 7 -->
 
             <div class="gallery-item">
 
                 <img
                     src="image2.jpeg"
-                    alt="Honey Stylez hairstyle"
+                    alt="Honey Stylez client hairstyle"
                 >
 
             </div>
 
 
-            <!-- PHOTO 8 -->
+            <!-- IMAGE 8 -->
 
             <div class="gallery-item">
 
                 <img
                     src="image2 (1).jpeg"
-                    alt="Honey Stylez hairstyle"
+                    alt="Honey Stylez client hairstyle"
                 >
 
             </div>
@@ -857,45 +1501,63 @@
 
 
 
-    <!-- =========================
+    <!-- =========================================
          BOOKING
-    ========================= -->
+    ========================================= -->
 
-    <section id="booking" class="booking">
+    <section
+        id="booking"
+        class="booking-section"
+    >
 
-        <h2 class="section-title">
-            Book Your Appointment
-        </h2>
-
-        <div class="gold-line"></div>
-
-
-        <div class="booking-box">
-
-            <h3>
-                Ready for Your New Style?
-            </h3>
-
-            <p>
-
-                Choose your desired style and
-                contact Honey Stylez to schedule
-                your appointment.
-
-            </p>
+        <div class="booking-grid">
 
 
-            <!--
-                Replace the # below with your
-                booking link when you have one.
-            -->
+            <div class="booking-card">
 
-            <a
-                href="#contact"
-                class="button"
-            >
-                Contact Me to Book
-            </a>
+                <h3>
+                    BOOK ONLINE
+                </h3>
+
+                <p>
+                    Choose your service,
+                    date & time.
+                </p>
+
+                <a
+                    href="sms:4706775065"
+                    class="gold-button"
+                >
+                    BOOK NOW →
+                </a>
+
+            </div>
+
+
+            <div class="booking-card">
+
+                <h3>
+                    TEXT TO BOOK
+                </h3>
+
+                <p>
+                    Send a text to schedule
+                    your appointment.
+                </p>
+
+                <div class="phone-number">
+                    470-677-5065
+                </div>
+
+                <a
+                    href="sms:4706775065"
+                    class="gold-button"
+                >
+                    SEND A TEXT
+                </a>
+
+            </div>
+
 
         </div>
 
@@ -903,11 +1565,63 @@
 
 
 
-    <!-- =========================
-         CONTACT
-    ========================= -->
+    <!-- =========================================
+         TESTIMONIALS
+    ========================================= -->
 
-    <section id="contact" class="contact">
+    <section class="testimonials">
+
+        <h2 class="section-title">
+            What Clients Are Saying
+        </h2>
+
+        <div class="gold-line"></div>
+
+
+        <div class="testimonial-grid">
+
+
+            <div class="testimonial">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    "Best braids I've ever gotten!
+                    She's fast, professional,
+                    and always gets me right!"
+                </p>
+
+            </div>
+
+
+            <div class="testimonial">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    "Honey Stylez never disappoints.
+                    The quality, attention to detail,
+                    and friendly vibes are unmatched!"
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         CONTACT
+    ========================================= -->
+
+    <section id="contact">
 
         <h2 class="section-title">
             Contact Honey Stylez
@@ -916,50 +1630,65 @@
         <div class="gold-line"></div>
 
 
-        <div class="contact-info">
-
-            <p>
-
-                <span class="contact-label">
-                    Location:
-                </span>
-
-                Auburn / Opelika, Alabama
-
-            </p>
+        <div class="contact-box">
 
 
-            <p>
+            <div class="contact-row">
 
                 <span class="contact-label">
-                    Appointments:
+                    📍 Location
                 </span>
 
-                By Appointment Only
+                <br>
 
-            </p>
+                Opelika/Auburn, Alabama
+
+            </div>
 
 
-            <p>
+            <div class="contact-row">
 
                 <span class="contact-label">
-                    Follow Honey Stylez:
+                    📱 Text to Book
                 </span>
 
-                Social media coming soon
+                <br>
 
-            </p>
+                <a
+                    href="sms:4706775065"
+                    class="contact-phone"
+                >
+                    470-677-5065
+                </a>
+
+            </div>
+
+
+            <div class="contact-row">
+
+                <span class="contact-label">
+                    ✉ Email
+                </span>
+
+                <br>
+
+                <span class="contact-email">
+                    honey.stylez@gmail.com
+                </span>
+
+            </div>
 
 
             <br>
 
 
             <a
-                href="#booking"
-                class="button"
+                href="sms:4706775065"
+                class="gold-button"
             >
-                Book an Appointment
+                TEXT TO BOOK
             </a>
+
 
         </div>
 
@@ -967,28 +1696,15 @@
 
 
 
-    <!-- =========================
+    <!-- =========================================
          FOOTER
-    ========================= -->
+    ========================================= -->
 
     <footer>
 
-        <p>
-
-            © 2026
-            <strong>Honey Stylez</strong>.
-            All Rights Reserved.
-
-        </p>
+        <div class="footer-logo">
+            Honey Stylez
+        </div>
 
         <p>
-            Auburn & Opelika, Alabama
-        </p>
-
-    </footer>
-
-
-
-</body>
-
-</html>
+            More Than Hair • It's A Lifestyle
